@@ -1,6 +1,6 @@
 # site properties and page defaults
-title: pml4sc
-subtitle: 
+title: PML4SC
+subtitle: Quantifying Uncertainty, Empowering Science
 description: An engaging 1-3 sentence description of your lab.
 header: images/background.jpg
 footer: images/background.jpg
@@ -8,12 +8,12 @@ proofer: false
 
 # site social media and other links
 links:
-  email: contact@pml4sc.com
-  orcid: 0000-0001-8713-9213
-  google-scholar: ETJoidYAAAAJ
+  email: pml4sc@gmail.com
+  # orcid: 0000-0001-8713-9213
+  # google-scholar: ETJoidYAAAAJ
   github: pml4sc
-  twitter: pml4sc
-  youtube: pml4sc
+  # twitter: 
+  # youtube: pml4sc
 
 ### jekyll settings
 
