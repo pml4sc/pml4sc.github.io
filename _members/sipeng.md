@@ -1,13 +1,15 @@
 ---
 name: Sipeng Chen
-image: images/members/shiboli.jpg
+image: images/members/photo.jpg
 description: Ph.D. Student
-role: 
+affiliation: Florida State University
+role: phd
 links:
-  email: sarah.johnson@gmail.com
-  twitter: sarahjohnson
-  google-scholar: ETJoidYAAAAJ
-  github: john-doe
+  email: 
+  twitter: 
+  google-scholar: 
+  github: 
+  home-page: 
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
