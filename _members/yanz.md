@@ -1,6 +1,6 @@
 ---
 name: Yan Zhang
-image: images/members/photo.jpg
+image: images/members/yanz.jpg
 description: Ph.D. Student
 affiliation: Florida State University
 role: phd
