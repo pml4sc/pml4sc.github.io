@@ -1,9 +1,9 @@
 ---
 ---
 
-# Welcome
+# Welcome 
 
-An engaging 1-3 sentence description of your lab.
+Developing probabilistic machine learning that quantifies uncertainty for robust scientific computing. Creating algorithms that deliver predictions with confidence estimates, empowering scientists to make informed decisions at the intersection of models and data.
 
 {% include section.html %}
 
