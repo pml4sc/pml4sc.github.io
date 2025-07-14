@@ -7,7 +7,4 @@ nav:
 
 # Seminar
 
-
-
-
 {% include list.html data="seminar" component="post-excerpt" %}
