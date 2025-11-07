@@ -6,9 +6,9 @@ affiliation: Florida State University
 role: phd
 links:
   email: yz18b@fsu.edu
-  twitter: https://x.com/YanZhan79590640
+  twitter: YanZhan79590640
   google-scholar: https://scholar.google.com/citations?hl=en&user=nAh7B5EAAAAJ
-  github: https://github.com/AnthonyZhangYan
+  github: AnthonyZhangYan
   home-page: https://anthonyzhang.me/
 ---
 
