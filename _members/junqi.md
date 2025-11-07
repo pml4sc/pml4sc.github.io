@@ -8,8 +8,8 @@ links:
   email: jq24b@fsu.edu
   twitter: qj_aria
   google-scholar: https://scholar.google.com/citations?user=WwDiV6MAAAAJ&hl=en
-  github: https://ariaqj.github.io/
-  home-page: AriaQJ
+  github: AriaQJ
+  home-page: https://ariaqj.github.io/
 ---
 
 
