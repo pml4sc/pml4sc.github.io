@@ -5,11 +5,11 @@ description: Ph.D. Student
 affiliation: Florida State University
 role: phd
 links:
-  email: 
-  twitter: 
-  google-scholar: 
-  github: 
-  home-page: 
+  email: jq24b@fsu.edu
+  twitter: qj_aria
+  google-scholar: https://scholar.google.com/citations?user=WwDiV6MAAAAJ&hl=en
+  github: https://ariaqj.github.io/
+  home-page: AriaQJ
 ---
 
 
