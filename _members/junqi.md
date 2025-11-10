@@ -1,6 +1,6 @@
 ---
 name: Junqi Qu
-image: images/members/photo.jpg
+image: images/members/junqi.jpg
 description: Ph.D. Student
 affiliation: Florida State University
 role: phd
