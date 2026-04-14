@@ -1,5 +1,5 @@
 ---
-name: Yifan Ding
+name: Yifan Dou
 image:
 description: Ph.D. Student
 affiliation: Florida State University
@@ -8,7 +8,7 @@ links:
   email: yd25b@fsu.edu
   twitter:
   google-scholar: nyUAnCQAAAAJ&hl=en
-  github: YD-00
+  github: yd-00
   home-page: https://yd-00.github.io/
 ---
 
