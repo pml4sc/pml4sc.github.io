@@ -101,7 +101,7 @@
   date: 2025-08-03
   year: 2025
   description: "ATOM is a real-time defense framework for graph neural network model extraction attacks that combines sequential modeling, reinforcement learning, and structural graph features to detect evolving attack behavior more effectively."
-  banner_label: ATOM
+  banner: images/pub_banners/ATOM.png
   buttons:
     - text: DOI
       link: https://dl.acm.org/doi/10.1145/3711896.3736848

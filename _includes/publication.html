@@ -1,7 +1,7 @@
 <article class="publication-card surface-panel">
   {% assign bibtex_id = include.title | slugify | append: '-bibtex' %}
-  <div class="publication-card__banner{% if include.banner %} publication-card__banner--image{% endif %}">
-    {% if include.banner %}
+  {% if include.banner %}
+    <div class="publication-card__banner publication-card__banner--image">
       <img
         src="{{ include.banner | relative_url | uri_escape }}"
         alt="{{ include.title | append: ' banner' | escape }}"
@@ -9,88 +9,85 @@
         loading="lazy"
         {% include fallback.html %}
       >
-    {% else %}
-      <div class="publication-card__banner-fallback">
-        <span class="publication-card__banner-badge">{{ include.short_venue | default: include.type | upcase }}</span>
-        <strong class="publication-card__banner-title">{{ include.banner_label | default: include.title }}</strong>
-      </div>
-    {% endif %}
-  </div>
-  <div class="publication-card__topline">
-    <span class="publication-card__type surface-chip">{{ include.type | default: "publication" }}</span>
-    {% if include.status %}
-      <span class="publication-card__status surface-chip surface-chip--success">{{ include.status }}</span>
-    {% endif %}
-  </div>
-
-  <h3 class="publication-card__title">{{ include.title }}</h3>
-
-  {% if include.authors %}
-    <div class="publication-card__authors">
-      {% for author in include.authors %}
-        {% include publication-author.html name=author %}
-        {% unless forloop.last %}, {% endunless %}
-      {% endfor %}
     </div>
   {% endif %}
+  <div class="publication-card__content">
+    <div class="publication-card__topline">
+      <span class="publication-card__type surface-chip">{{ include.type | default: "publication" }}</span>
+      {% if include.status %}
+        <span class="publication-card__status surface-chip surface-chip--success">{{ include.status }}</span>
+      {% endif %}
+    </div>
 
-  <div class="publication-card__meta">
-    {% if include.short_venue %}
-      <span class="publication-card__venue publication-card__venue--short surface-chip surface-chip--soft">{{ include.short_venue }}</span>
-    {% endif %}
-    {% if include.venue %}
-      <span class="publication-card__venue">{{ include.venue }}</span>
-    {% endif %}
-    {% if include.year %}
-      <span class="publication-card__year">{{ include.year }}</span>
-    {% endif %}
-  </div>
+    <h3 class="publication-card__title">{{ include.title }}</h3>
 
-  {% if include.description %}
-    <p class="publication-card__description">{{ include.description }}</p>
-  {% endif %}
-
-  {% if include.buttons.size > 0 or include.bibtex %}
-    <div class="publication-card__buttons">
-      {% if include.buttons.size > 0 %}
-        {% for button in include.buttons %}
-          {%
-            include button.html
-            icon=button.icon
-            text=button.text
-            link=button.link
-          %}
+    {% if include.authors %}
+      <div class="publication-card__authors">
+        {% for author in include.authors %}
+          {% include publication-author.html name=author %}
+          {% unless forloop.last %}, {% endunless %}
         {% endfor %}
-      {% endif %}
-      {% if include.bibtex %}
-        <button
-          type="button"
-          class="button publication-card__cite-toggle"
-          data-bibtex-toggle="{{ bibtex_id }}"
-          aria-expanded="false"
-          aria-controls="{{ bibtex_id }}"
-        >
-          {% include icon.html icon="fa-solid fa-quote-left" %}
-          <span>Cite</span>
-        </button>
-      {% endif %}
-    </div>
-  {% endif %}
-
-  {% if include.bibtex %}
-    <div class="publication-card__bibtex surface-panel" id="{{ bibtex_id }}" hidden>
-      <div class="publication-card__bibtex-actions">
-        <span class="surface-chip surface-chip--soft">BibTeX</span>
-        <button
-          type="button"
-          class="button publication-card__copy-button"
-          data-bibtex-copy="{{ bibtex_id }}"
-        >
-          {% include icon.html icon="fa-regular fa-copy" %}
-          <span>Copy BibTeX</span>
-        </button>
       </div>
-      <pre class="publication-card__bibtex-pre"><code>{{ include.bibtex | escape }}</code></pre>
+    {% endif %}
+
+    <div class="publication-card__meta">
+      {% if include.short_venue %}
+        <span class="publication-card__venue publication-card__venue--short surface-chip surface-chip--soft">{{ include.short_venue }}</span>
+      {% endif %}
+      {% if include.venue %}
+        <span class="publication-card__venue">{{ include.venue }}</span>
+      {% endif %}
+      {% if include.year %}
+        <span class="publication-card__year">{{ include.year }}</span>
+      {% endif %}
     </div>
-  {% endif %}
+
+    {% if include.description %}
+      <p class="publication-card__description">{{ include.description }}</p>
+    {% endif %}
+
+    {% if include.buttons.size > 0 or include.bibtex %}
+      <div class="publication-card__buttons">
+        {% if include.buttons.size > 0 %}
+          {% for button in include.buttons %}
+            {%
+              include button.html
+              icon=button.icon
+              text=button.text
+              link=button.link
+            %}
+          {% endfor %}
+        {% endif %}
+        {% if include.bibtex %}
+          <button
+            type="button"
+            class="button publication-card__cite-toggle"
+            data-bibtex-toggle="{{ bibtex_id }}"
+            aria-expanded="false"
+            aria-controls="{{ bibtex_id }}"
+          >
+            {% include icon.html icon="fa-solid fa-quote-left" %}
+            <span>Cite</span>
+          </button>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    {% if include.bibtex %}
+      <div class="publication-card__bibtex surface-panel" id="{{ bibtex_id }}" hidden>
+        <div class="publication-card__bibtex-actions">
+          <span class="surface-chip surface-chip--soft">BibTeX</span>
+          <button
+            type="button"
+            class="button publication-card__copy-button"
+            data-bibtex-copy="{{ bibtex_id }}"
+          >
+            {% include icon.html icon="fa-regular fa-copy" %}
+            <span>Copy BibTeX</span>
+          </button>
+        </div>
+        <pre class="publication-card__bibtex-pre"><code>{{ include.bibtex | escape }}</code></pre>
+      </div>
+    {% endif %}
+  </div>
 </article>
