@@ -106,10 +106,11 @@
       link: https://dl.acm.org/doi/pdf/10.1145/3711896.3736848
       icon: fa-solid fa-file-pdf
   bibtex: |-
-    @inproceedings{10.1145/3711896.3736848,
+    @inproceedings{cheng2025atom,
       title={{ATOM}: A Framework of Detecting Query-Based Model Extraction Attacks for Graph Neural Networks},
       author={Cheng, Zhan and Shen, Bolin and Sha, Tianming and Gao, Yuan and Li, Shibo and Dong, Yushun},
       booktitle={Proceedings of the 31st ACM SIGKDD Conference on Knowledge Discovery and Data Mining},
+      publisher={Association for Computing Machinery},
+      pages={322--333},
       year={2025},
-      doi={10.1145/3711896.3736848}
     }
