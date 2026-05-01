@@ -48,14 +48,16 @@
 .publication-card__banner {
   position: relative;
   overflow: hidden;
+  padding: 14px 14px 0;
   border-bottom: 1px solid rgba(7, 149, 217, 0.12);
-  background: #d7d7d7;
+  background: var(--background);
 }
 
 .publication-card__banner-image {
   width: 100%;
   height: auto;
   display: block;
+  border-radius: 18px 18px 0 0;
 }
 
 .publication-card__topline {
