@@ -1,0 +1,48 @@
+<article class="publication-card">
+  <div class="publication-card__topline">
+    <span class="publication-card__type">{{ include.type | default: "publication" }}</span>
+    {% if include.status %}
+      <span class="publication-card__status">{{ include.status }}</span>
+    {% endif %}
+  </div>
+
+  <h3 class="publication-card__title">{{ include.title }}</h3>
+
+  {% if include.authors %}
+    <div class="publication-card__authors">
+      {% for author in include.authors %}
+        {% include publication-author.html name=author %}
+        {% unless forloop.last %}, {% endunless %}
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  <div class="publication-card__meta">
+    {% if include.short_venue %}
+      <span class="publication-card__venue publication-card__venue--short">{{ include.short_venue }}</span>
+    {% endif %}
+    {% if include.venue %}
+      <span class="publication-card__venue">{{ include.venue }}</span>
+    {% endif %}
+    {% if include.year %}
+      <span class="publication-card__year">{{ include.year }}</span>
+    {% endif %}
+  </div>
+
+  {% if include.description %}
+    <p class="publication-card__description">{{ include.description }}</p>
+  {% endif %}
+
+  {% if include.buttons.size > 0 %}
+    <div class="publication-card__buttons">
+      {% for button in include.buttons %}
+        {%
+          include button.html
+          icon=button.icon
+          text=button.text
+          link=button.link
+        %}
+      {% endfor %}
+    </div>
+  {% endif %}
+</article>

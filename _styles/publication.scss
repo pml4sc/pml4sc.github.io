@@ -1,0 +1,202 @@
+---
+---
+
+.publications-hero {
+  display: grid;
+  gap: 28px;
+  align-items: end;
+}
+
+.publications-hero__eyebrow {
+  display: inline-flex;
+  width: fit-content;
+  padding: 6px 12px;
+  border: 1px solid color-mix(in srgb, var(--primary) 35%, transparent);
+  border-radius: 999px;
+  color: var(--primary);
+  font-family: var(--heading);
+  font-size: 0.82rem;
+  font-weight: var(--semi-bold);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.publications-hero h1 {
+  max-width: 12ch;
+  margin-bottom: 16px;
+  font-size: clamp(2.6rem, 6vw, 4.8rem);
+  line-height: 0.95;
+}
+
+.publications-hero p {
+  max-width: 60ch;
+  margin: 0;
+  color: var(--dark-gray);
+  font-size: 1.05rem;
+}
+
+.publications-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.publications-stat {
+  padding: 18px 20px;
+  border: 1px solid color-mix(in srgb, var(--primary) 14%, transparent);
+  border-radius: 18px;
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--background) 86%, var(--secondary) 14%), var(--background));
+  box-shadow: 0 18px 40px color-mix(in srgb, var(--overlay) 70%, transparent);
+}
+
+.publications-stat strong {
+  display: block;
+  margin-bottom: 6px;
+  font-family: var(--heading);
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.publications-stat span {
+  color: var(--dark-gray);
+}
+
+.publications-grid {
+  display: grid;
+  gap: 22px;
+}
+
+.publication-card {
+  padding: 28px;
+  border: 1px solid color-mix(in srgb, var(--primary) 12%, transparent);
+  border-radius: 24px;
+  background:
+    radial-gradient(circle at top right, color-mix(in srgb, var(--secondary) 22%, transparent), transparent 32%),
+    linear-gradient(180deg, color-mix(in srgb, var(--background) 84%, var(--secondary) 16%), var(--background));
+  box-shadow: 0 20px 45px color-mix(in srgb, var(--overlay) 65%, transparent);
+}
+
+.publication-card__topline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.publication-card__type,
+.publication-card__status,
+.publication-card__venue--short,
+.publication-year {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  border-radius: 999px;
+  font-family: var(--heading);
+  font-size: 0.82rem;
+  font-weight: var(--semi-bold);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.publication-card__type {
+  padding: 6px 12px;
+  background: color-mix(in srgb, var(--text) 6%, transparent);
+  color: var(--dark-gray);
+}
+
+.publication-card__status {
+  padding: 6px 12px;
+  background: color-mix(in srgb, #17a36b 16%, transparent);
+  color: #0b7a4f;
+}
+
+.publication-card__title {
+  margin: 0 0 14px;
+  font-size: clamp(1.4rem, 2vw, 2rem);
+  line-height: 1.16;
+}
+
+.publication-card__authors {
+  color: var(--dark-gray);
+  font-size: 1.02rem;
+}
+
+.publication-card__author {
+  color: inherit;
+}
+
+.publication-card__author--member {
+  color: var(--text);
+  font-weight: var(--semi-bold);
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--primary) 65%, transparent);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.16em;
+  transition: color var(--transition), text-decoration-color var(--transition);
+}
+
+.publication-card__author--member:hover {
+  color: var(--primary);
+  text-decoration-color: var(--primary);
+}
+
+.publication-card__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 12px;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.publication-card__venue--short {
+  padding: 5px 10px;
+  background: color-mix(in srgb, var(--primary) 14%, transparent);
+  color: var(--primary);
+}
+
+.publication-card__venue {
+  color: var(--text);
+  font-weight: var(--semi-bold);
+}
+
+.publication-card__year {
+  color: var(--gray);
+}
+
+.publication-card__description {
+  max-width: 68ch;
+  margin: 16px 0 0;
+  color: var(--dark-gray);
+}
+
+.publication-card__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.publication-card__buttons .button {
+  margin: 0;
+  border-radius: 999px;
+}
+
+.publication-year {
+  margin: 40px 0 18px;
+  padding: 7px 14px;
+  background: color-mix(in srgb, var(--primary) 12%, transparent);
+  color: var(--primary);
+}
+
+@media (max-width: 800px) {
+  .publications-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .publication-card {
+    padding: 22px;
+    border-radius: 20px;
+  }
+}

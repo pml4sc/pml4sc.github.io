@@ -1,0 +1,13 @@
+{% assign author_name = include.name | strip %}
+{% assign matched_member = site.members | where: "name", author_name | first %}
+
+{% if matched_member %}
+  <a
+    href="{{ matched_member.url | relative_url | uri_escape }}"
+    class="publication-card__author publication-card__author--member"
+  >
+    {{ author_name }}
+  </a>
+{% else %}
+  <span class="publication-card__author">{{ author_name }}</span>
+{% endif %}
