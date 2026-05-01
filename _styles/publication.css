@@ -1,3 +1,7 @@
+.publications-hero {
+  gap: 20px;
+}
+
 .publications-stats {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -66,6 +70,7 @@
 }
 
 .publication-card__authors {
+  text-align: left;
   color: var(--dark-gray);
   font-size: 1.02rem;
 }
