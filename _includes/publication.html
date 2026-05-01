@@ -1,4 +1,5 @@
 <article class="publication-card surface-panel">
+  {% assign bibtex_id = include.title | slugify | append: '-bibtex' %}
   <div class="publication-card__topline">
     <span class="publication-card__type surface-chip">{{ include.type | default: "publication" }}</span>
     {% if include.status %}
@@ -33,16 +34,47 @@
     <p class="publication-card__description">{{ include.description }}</p>
   {% endif %}
 
-  {% if include.buttons.size > 0 %}
+  {% if include.buttons.size > 0 or include.bibtex %}
     <div class="publication-card__buttons">
-      {% for button in include.buttons %}
-        {%
-          include button.html
-          icon=button.icon
-          text=button.text
-          link=button.link
-        %}
-      {% endfor %}
+      {% if include.buttons.size > 0 %}
+        {% for button in include.buttons %}
+          {%
+            include button.html
+            icon=button.icon
+            text=button.text
+            link=button.link
+          %}
+        {% endfor %}
+      {% endif %}
+      {% if include.bibtex %}
+        <button
+          type="button"
+          class="button publication-card__cite-toggle"
+          data-bibtex-toggle="{{ bibtex_id }}"
+          aria-expanded="false"
+          aria-controls="{{ bibtex_id }}"
+        >
+          {% include icon.html icon="fa-solid fa-quote-left" %}
+          <span>Cite</span>
+        </button>
+      {% endif %}
+    </div>
+  {% endif %}
+
+  {% if include.bibtex %}
+    <div class="publication-card__bibtex surface-panel" id="{{ bibtex_id }}" hidden>
+      <div class="publication-card__bibtex-actions">
+        <span class="surface-chip surface-chip--soft">BibTeX</span>
+        <button
+          type="button"
+          class="button publication-card__copy-button"
+          data-bibtex-copy="{{ bibtex_id }}"
+        >
+          {% include icon.html icon="fa-regular fa-copy" %}
+          <span>Copy BibTeX</span>
+        </button>
+      </div>
+      <pre class="publication-card__bibtex-pre"><code>{{ include.bibtex | escape }}</code></pre>
     </div>
   {% endif %}
 </article>

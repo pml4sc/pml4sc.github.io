@@ -45,6 +45,7 @@ nav:
         year=paper.year
         description=paper.description
         buttons=paper.buttons
+        bibtex=paper.bibtex
       %}
     {% endfor %}
   </div>
