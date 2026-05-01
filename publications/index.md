@@ -44,6 +44,8 @@ nav:
         type=paper.type
         year=paper.year
         description=paper.description
+        banner=paper.banner
+        banner_label=paper.banner_label
         buttons=paper.buttons
         bibtex=paper.bibtex
       %}

@@ -13,6 +13,7 @@
   date: 2026-04-01
   year: 2026
   description: "A regime-adaptive Bayesian optimization framework that models heterogeneous response patterns with Dirichlet process mixtures of Gaussian processes."
+  banner: images/pub_banners/RAMBO.png
   buttons:
     - text: arXiv
       link: https://arxiv.org/abs/2601.20043
@@ -42,6 +43,7 @@
   date: 2026-03-01
   year: 2026
   description: "A unified neural operator framework for scalable multi-physics simulations, currently available as an arXiv preprint and accepted by IJCNN 2026."
+  banner_label: COMPOL
   buttons:
     - text: arXiv
       link: https://arxiv.org/abs/2501.17296
@@ -68,6 +70,7 @@
   date: 2025-09-27
   year: 2025
   description: "OptiINR formulates implicit neural representation configuration as a principled global optimization problem and uses Bayesian optimization to jointly search activation families and initialization parameters for stronger, more stable performance."
+  banner_label: OptiINR
   buttons:
     - text: arXiv
       link: https://arxiv.org/abs/2509.23139
@@ -98,6 +101,7 @@
   date: 2025-08-03
   year: 2025
   description: "ATOM is a real-time defense framework for graph neural network model extraction attacks that combines sequential modeling, reinforcement learning, and structural graph features to detect evolving attack behavior more effectively."
+  banner_label: ATOM
   buttons:
     - text: DOI
       link: https://dl.acm.org/doi/10.1145/3711896.3736848
