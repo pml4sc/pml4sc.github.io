@@ -1,4 +1,4 @@
-- title: Regime-Adaptive Bayesian Optimization via Dirichlet Process Mixtures of Gaussian Processes
+- title: "Regime-Adaptive Bayesian Optimization via Dirichlet Process Mixtures of Gaussian Processes"
   authors:
     - Yan Zhang
     - Xuefeng Liu
@@ -12,7 +12,7 @@
   type: conference
   date: 2026-01-01
   year: 2026
-  description: A regime-adaptive Bayesian optimization framework that models heterogeneous response patterns with Dirichlet process mixtures of Gaussian processes.
+  description: "A regime-adaptive Bayesian optimization framework that models heterogeneous response patterns with Dirichlet process mixtures of Gaussian processes."
   buttons:
     - text: arXiv
       link: https://arxiv.org/abs/2601.20043
@@ -21,7 +21,7 @@
       link: https://arxiv.org/pdf/2601.20043
       icon: fa-solid fa-file-pdf
 
-- title: COMPOL: A Unified Neural Operator Framework for Scalable Multi-Physics Simulations
+- title: "COMPOL: A Unified Neural Operator Framework for Scalable Multi-Physics Simulations"
   authors:
     - Yifei Sun
     - Tao Wang
@@ -35,7 +35,7 @@
   type: conference
   date: 2026-01-01
   year: 2026
-  description: A unified neural operator framework for scalable multi-physics simulations, currently available as an arXiv preprint and accepted by IJCNN 2026.
+  description: "A unified neural operator framework for scalable multi-physics simulations, currently available as an arXiv preprint and accepted by IJCNN 2026."
   buttons:
     - text: arXiv
       link: https://arxiv.org/abs/2501.17296
