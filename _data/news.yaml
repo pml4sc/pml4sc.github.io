@@ -10,12 +10,6 @@
   link: https://arxiv.org/abs/2501.17296
   tag: Paper Accepted
 
-- date: 2025-09-27
-  title: New arXiv preprint on implicit neural representations
-  description: "Beyond Heuristics: Globally Optimal Configuration of Implicit Neural Representations introduces OptiINR, a Bayesian optimization framework for principled configuration of implicit neural representations across activation choices and initialization parameters."
-  link: https://arxiv.org/abs/2509.23139
-  tag: Preprint
-
 - date: 2025-08-03
   title: KDD 2025 publication
   description: "ATOM: A Framework of Detecting Query-Based Model Extraction Attacks for Graph Neural Networks was published at KDD 2025, presenting a real-time detection framework for graph neural network model extraction attacks."
