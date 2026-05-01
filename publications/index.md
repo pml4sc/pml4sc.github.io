@@ -8,11 +8,11 @@ nav:
 {% assign publications = site.data.publications | sort: "date" | reverse %}
 {% assign accepted_count = site.data.publications | where: "status", "Accepted" | size %}
 
-<div class="publications-hero">
+<div class="section-intro section-intro--hero publications-hero">
   <div>
-    <span class="publications-hero__eyebrow">PML4SC Publications</span>
-    <h1>Research outputs from the group.</h1>
-    <p>
+    <span class="section-intro__eyebrow">PML4SC Publications</span>
+    <h1 class="section-intro__title">Research outputs from the group.</h1>
+    <p class="section-intro__text">
       Selected papers from the lab, with a focus on probabilistic machine learning,
       uncertainty-aware modeling, and scientific computing. This page is now curated
       manually so it reflects the group’s actual publications rather than template data.
@@ -20,15 +20,15 @@ nav:
   </div>
 
   <div class="publications-stats">
-    <div class="publications-stat">
+    <div class="publications-stat surface-panel">
       <strong>{{ site.data.publications | size }}</strong>
       <span>papers listed</span>
     </div>
-    <div class="publications-stat">
+    <div class="publications-stat surface-panel">
       <strong>{{ accepted_count }}</strong>
       <span>accepted papers</span>
     </div>
-    <div class="publications-stat">
+    <div class="publications-stat surface-panel">
       <strong>{{ publications.first.year }}</strong>
       <span>latest publication year</span>
     </div>
@@ -37,12 +37,18 @@ nav:
 
 {% include section.html %}
 
-## Current Publications
+<div class="section-intro">
+  <span class="section-intro__eyebrow">Archive</span>
+  <h2 class="section-intro__title">Current publications</h2>
+  <p class="section-intro__text">
+    Accepted papers and preprints from the group, organized by year for incremental updates.
+  </p>
+</div>
 
 {% assign years = publications | group_by: "year" %}
 
 {% for year in years %}
-  <div class="publication-year">{{ year.name }}</div>
+  <div class="publication-year surface-chip surface-chip--soft">{{ year.name }}</div>
   <div class="publications-grid">
     {% for paper in year.items %}
       {%

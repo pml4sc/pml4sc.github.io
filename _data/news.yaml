@@ -1,0 +1,13 @@
+- date: 2026-04-01
+  title: ICML 2026 acceptance
+  description: The accepted ICML 2026 paper introduces RAMBO, a Bayesian optimization framework that uses Dirichlet process mixtures of Gaussian processes to adapt to heterogeneous objective regimes and improve uncertainty-aware search across scientific design tasks. Congratulations to first author
+  first_author: Yan Zhang
+  link: https://arxiv.org/abs/2601.20043
+  tag: Paper Accepted
+
+- date: 2026-03-01
+  title: IJCNN 2026 acceptance
+  description: The accepted IJCNN 2026 paper presents COMPOL, a unified neural operator framework that models interactions among coupled physical processes with recurrent and attention-based feature aggregation for scalable multi-physics simulations. Congratulations to first author
+  first_author: Junqi Qu
+  link: https://arxiv.org/abs/2501.17296
+  tag: Paper Accepted

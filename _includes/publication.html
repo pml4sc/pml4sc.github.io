@@ -1,8 +1,8 @@
-<article class="publication-card">
+<article class="publication-card surface-panel">
   <div class="publication-card__topline">
-    <span class="publication-card__type">{{ include.type | default: "publication" }}</span>
+    <span class="publication-card__type surface-chip">{{ include.type | default: "publication" }}</span>
     {% if include.status %}
-      <span class="publication-card__status">{{ include.status }}</span>
+      <span class="publication-card__status surface-chip surface-chip--success">{{ include.status }}</span>
     {% endif %}
   </div>
 
@@ -19,7 +19,7 @@
 
   <div class="publication-card__meta">
     {% if include.short_venue %}
-      <span class="publication-card__venue publication-card__venue--short">{{ include.short_venue }}</span>
+      <span class="publication-card__venue publication-card__venue--short surface-chip surface-chip--soft">{{ include.short_venue }}</span>
     {% endif %}
     {% if include.venue %}
       <span class="publication-card__venue">{{ include.venue }}</span>

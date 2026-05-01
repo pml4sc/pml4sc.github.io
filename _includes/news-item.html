@@ -1,0 +1,22 @@
+<article class="news-item">
+  <div class="news-item__date surface-chip surface-chip--soft">{{ include.date | date: "%Y-%m" }}</div>
+  <div class="news-item__content">
+    <div class="news-item__topline">
+      {% if include.tag %}
+        <span class="news-item__tag surface-chip surface-chip--success">{{ include.tag }}</span>
+      {% endif %}
+    </div>
+    {% if include.link %}
+      <a href="{{ include.link }}" class="news-item__title news-item__title--link">
+        {{ include.title }}
+      </a>
+    {% else %}
+      <h3 class="news-item__title">{{ include.title }}</h3>
+    {% endif %}
+    <p class="news-item__description">
+      {{ include.description }}
+      {% include publication-author.html name=include.first_author %}
+      .
+    </p>
+  </div>
+</article>
