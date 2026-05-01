@@ -102,9 +102,9 @@
     - text: DOI
       link: https://dl.acm.org/doi/10.1145/3711896.3736848
       icon: fa-solid fa-link
-    - text: arXiv
-      link: https://arxiv.org/abs/2503.16693
-      icon: fa-solid fa-file-lines
+    - text: PDF
+      link: https://dl.acm.org/doi/pdf/10.1145/3711896.3736848
+      icon: fa-solid fa-file-pdf
   bibtex: |-
     @inproceedings{10.1145/3711896.3736848,
       title={{ATOM}: A Framework of Detecting Query-Based Model Extraction Attacks for Graph Neural Networks},
