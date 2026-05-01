@@ -15,6 +15,9 @@
     {% endif %}
     <p class="news-item__description">
       {{ include.description }}
+      {% if include.congrats_name %}
+        Congrats to {% include publication-author.html name=include.congrats_name %}.
+      {% endif %}
     </p>
   </div>
 </article>

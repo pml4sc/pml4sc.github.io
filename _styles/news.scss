@@ -8,7 +8,7 @@
 
 .news-feed {
   position: relative;
-  max-height: 320px;
+  max-height: 520px;
   padding: 18px;
   overflow: hidden auto;
   overflow-y: auto;
@@ -84,6 +84,6 @@
 
 @media (max-width: 800px) {
   .news-feed {
-    max-height: 360px;
+    max-height: 460px;
   }
 }
