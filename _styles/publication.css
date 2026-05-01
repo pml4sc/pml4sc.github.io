@@ -95,13 +95,13 @@
 }
 
 .publication-card__author--pi {
-  color: #0b7a4f;
-  text-decoration-color: rgba(11, 122, 79, 0.45);
+  color: #a65454;
+  text-decoration-color: rgba(166, 84, 84, 0.42);
 }
 
 .publication-card__author--pi:hover {
-  color: #0f9a64;
-  text-decoration-color: rgba(15, 154, 100, 0.65);
+  color: #bd6666;
+  text-decoration-color: rgba(189, 102, 102, 0.62);
 }
 
 .publication-card__meta {
