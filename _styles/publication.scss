@@ -54,7 +54,7 @@
 }
 
 .publication-card__type {
-  background: color-mix(in srgb, var(--text) 6%, transparent);
+  background: var(--background-alt);
   color: var(--dark-gray);
 }
 
@@ -81,7 +81,7 @@
   color: var(--text);
   font-weight: var(--semi-bold);
   text-decoration: underline;
-  text-decoration-color: color-mix(in srgb, var(--primary) 65%, transparent);
+  text-decoration-color: rgba(7, 149, 217, 0.65);
   text-decoration-thickness: 2px;
   text-underline-offset: 0.16em;
   transition: color var(--transition), text-decoration-color var(--transition);
