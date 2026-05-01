@@ -10,7 +10,7 @@
   short_venue: ICML 2026
   status: Accepted
   type: conference
-  date: 2026-01-01
+  date: 2026-04-01
   year: 2026
   description: "A regime-adaptive Bayesian optimization framework that models heterogeneous response patterns with Dirichlet process mixtures of Gaussian processes."
   buttons:
@@ -33,7 +33,7 @@
   short_venue: IJCNN 2026
   status: Accepted
   type: conference
-  date: 2026-01-01
+  date: 2026-03-01
   year: 2026
   description: "A unified neural operator framework for scalable multi-physics simulations, currently available as an arXiv preprint and accepted by IJCNN 2026."
   buttons:

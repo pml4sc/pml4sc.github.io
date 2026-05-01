@@ -8,17 +8,8 @@ nav:
 {% assign publications = site.data.publications | sort: "date" | reverse %}
 {% assign accepted_count = site.data.publications | where: "status", "Accepted" | size %}
 
-<div class="section-intro section-intro--hero publications-hero">
-  <div>
-    <span class="section-intro__eyebrow">PML4SC Publications</span>
-    <h1 class="section-intro__title">Research outputs from the group.</h1>
-    <p class="section-intro__text">
-      Selected papers from the lab, with a focus on probabilistic machine learning,
-      uncertainty-aware modeling, and scientific computing. This page is now curated
-      manually so it reflects the group’s actual publications rather than template data.
-    </p>
-  </div>
-
+<div class="section-intro publications-hero">
+  <span class="section-intro__eyebrow">PML4SC Publications</span>
   <div class="publications-stats">
     <div class="publications-stat surface-panel">
       <strong>{{ site.data.publications | size }}</strong>
@@ -36,14 +27,6 @@ nav:
 </div>
 
 {% include section.html %}
-
-<div class="section-intro">
-  <span class="section-intro__eyebrow">Archive</span>
-  <h2 class="section-intro__title">Current publications</h2>
-  <p class="section-intro__text">
-    Accepted papers and preprints from the group, organized by year for incremental updates.
-  </p>
-</div>
 
 {% assign years = publications | group_by: "year" %}
 
