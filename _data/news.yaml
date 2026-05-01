@@ -1,23 +1,23 @@
 - date: 2026-04-01
   title: ICML 2026 acceptance
-  description: The accepted ICML 2026 paper introduces RAMBO, a Bayesian optimization framework that uses Dirichlet process mixtures of Gaussian processes to adapt to heterogeneous objective regimes and improve uncertainty-aware search across scientific design tasks. Congrats to Yan Zhang.
+  description: "The accepted ICML 2026 paper introduces RAMBO, a Bayesian optimization framework that uses Dirichlet process mixtures of Gaussian processes to adapt to heterogeneous objective regimes and improve uncertainty-aware search across scientific design tasks. Congrats to Yan Zhang."
   link: https://arxiv.org/abs/2601.20043
   tag: Paper Accepted
 
 - date: 2026-03-01
   title: IJCNN 2026 acceptance
-  description: The accepted IJCNN 2026 paper presents COMPOL, a unified neural operator framework that models interactions among coupled physical processes with recurrent and attention-based feature aggregation for scalable multi-physics simulations. Congrats to Junqi Qu.
+  description: "The accepted IJCNN 2026 paper presents COMPOL, a unified neural operator framework that models interactions among coupled physical processes with recurrent and attention-based feature aggregation for scalable multi-physics simulations. Congrats to Junqi Qu."
   link: https://arxiv.org/abs/2501.17296
   tag: Paper Accepted
 
 - date: 2025-09-27
   title: New arXiv preprint on implicit neural representations
-  description: Beyond Heuristics: Globally Optimal Configuration of Implicit Neural Representations introduces OptiINR, a Bayesian optimization framework for principled configuration of implicit neural representations across activation choices and initialization parameters.
+  description: "Beyond Heuristics: Globally Optimal Configuration of Implicit Neural Representations introduces OptiINR, a Bayesian optimization framework for principled configuration of implicit neural representations across activation choices and initialization parameters."
   link: https://arxiv.org/abs/2509.23139
   tag: Preprint
 
 - date: 2025-08-03
   title: KDD 2025 publication
-  description: ATOM: A Framework of Detecting Query-Based Model Extraction Attacks for Graph Neural Networks was published at KDD 2025, presenting a real-time detection framework for graph neural network model extraction attacks.
+  description: "ATOM: A Framework of Detecting Query-Based Model Extraction Attacks for Graph Neural Networks was published at KDD 2025, presenting a real-time detection framework for graph neural network model extraction attacks."
   link: https://dl.acm.org/doi/10.1145/3711896.3736848
   tag: Publication
