@@ -43,7 +43,7 @@
   date: 2026-03-01
   year: 2026
   description: "A unified neural operator framework for scalable multi-physics simulations, currently available as an arXiv preprint and accepted by IJCNN 2026."
-  banner_label: COMPOL
+  banner: images/pub_banners/COMPOL.png
   buttons:
     - text: arXiv
       link: https://arxiv.org/abs/2501.17296
@@ -70,7 +70,7 @@
   date: 2025-09-27
   year: 2025
   description: "OptiINR formulates implicit neural representation configuration as a principled global optimization problem and uses Bayesian optimization to jointly search activation families and initialization parameters for stronger, more stable performance."
-  banner_label: OptiINR
+  banner: images/pub_banners/OptiINR.png
   buttons:
     - text: arXiv
       link: https://arxiv.org/abs/2509.23139
@@ -84,37 +84,4 @@
       author={Chen, Sipeng and Zhang, Yan and Li, Shibo},
       journal={arXiv preprint arXiv:2509.23139},
       year={2025}
-    }
-
-- title: "ATOM: A Framework of Detecting Query-Based Model Extraction Attacks for Graph Neural Networks"
-  authors:
-    - Zhan Cheng
-    - Bolin Shen
-    - Tianming Sha
-    - Yuan Gao
-    - Shibo Li
-    - Yushun Dong
-  venue: Proceedings of the 31st ACM SIGKDD Conference on Knowledge Discovery and Data Mining
-  short_venue: KDD 2025
-  status: Published
-  type: conference
-  date: 2025-08-03
-  year: 2025
-  description: "ATOM is a real-time defense framework for graph neural network model extraction attacks that combines sequential modeling, reinforcement learning, and structural graph features to detect evolving attack behavior more effectively."
-  banner: images/pub_banners/ATOM.png
-  buttons:
-    - text: DOI
-      link: https://dl.acm.org/doi/10.1145/3711896.3736848
-      icon: fa-solid fa-link
-    - text: PDF
-      link: https://dl.acm.org/doi/pdf/10.1145/3711896.3736848
-      icon: fa-solid fa-file-pdf
-  bibtex: |-
-    @inproceedings{cheng2025atom,
-      title={{ATOM}: A Framework of Detecting Query-Based Model Extraction Attacks for Graph Neural Networks},
-      author={Cheng, Zhan and Shen, Bolin and Sha, Tianming and Gao, Yuan and Li, Shibo and Dong, Yushun},
-      booktitle={Proceedings of the 31st ACM SIGKDD Conference on Knowledge Discovery and Data Mining},
-      publisher={Association for Computing Machinery},
-      pages={322--333},
-      year={2025},
     }
