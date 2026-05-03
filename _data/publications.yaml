@@ -59,6 +59,33 @@
       year={2025}
     }
 
+- title: "Dynamic Bayesian Optimization Framework for Instruction Tuning in Partial Differential Equation Discovery"
+  authors:
+    - Junqi Qu
+    - Yan Zhang
+    - Shangqian Gao
+    - Shibo Li
+  venue: arXiv preprint
+  short_venue: arXiv 2025
+  type: preprint
+  date: 2025-12-31
+  year: 2025
+  description: "NeuroSymBO frames instruction tuning for PDE discovery as a sequential decision problem and uses Bayesian optimization to adaptively select reasoning strategies during multi-step generation."
+  buttons:
+    - text: arXiv
+      link: https://arxiv.org/abs/2601.00088
+      icon: fa-solid fa-file-lines
+    - text: PDF
+      link: https://arxiv.org/pdf/2601.00088
+      icon: fa-solid fa-file-pdf
+  bibtex: |-
+    @article{qu2025neurosymbo,
+      title={Dynamic {Bayesian} Optimization Framework for Instruction Tuning in Partial Differential Equation Discovery},
+      author={Qu, Junqi and Zhang, Yan and Gao, Shangqian and Li, Shibo},
+      journal={arXiv preprint arXiv:2601.00088},
+      year={2025}
+    }
+
 - title: "Beyond Heuristics: Globally Optimal Configuration of Implicit Neural Representations"
   authors:
     - Sipeng Chen
