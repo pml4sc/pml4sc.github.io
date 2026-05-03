@@ -71,6 +71,7 @@
   date: 2025-12-31
   year: 2025
   description: "NeuroSymBO frames instruction tuning for PDE discovery as a sequential decision problem and uses Bayesian optimization to adaptively select reasoning strategies during multi-step generation."
+  banner: images/pub_banners/NeuroSym-BO.png
   buttons:
     - text: arXiv
       link: https://arxiv.org/abs/2601.00088
