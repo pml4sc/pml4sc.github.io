@@ -1,6 +1,6 @@
 ---
 name: Yifan Dou
-image:
+image: images/members/yifan.png
 description: Ph.D. Student
 affiliation: Florida State University
 role: phd
@@ -11,4 +11,3 @@ links:
   github: yd-00
   home-page: https://yd-00.github.io/
 ---
-
