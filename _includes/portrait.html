@@ -8,6 +8,10 @@
 {% endif %}
 
 {% assign type = site.data.types[member.role] %}
+{% assign portrait_image = member.image %}
+{% if portrait_image == nil or portrait_image == "" %}
+  {% assign portrait_image = "images/members/pml4sc-default.png" %}
+{% endif %}
 
 <div class="portrait-wrapper">
   <a
@@ -23,7 +27,7 @@
     {% endif %}
 
     <img
-      src="{{ member.image | relative_url | uri_escape }}"
+      src="{{ portrait_image | relative_url | uri_escape }}"
       class="portrait-image"
       alt="member portrait"
       loading="lazy"

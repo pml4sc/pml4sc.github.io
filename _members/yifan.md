@@ -1,6 +1,6 @@
 ---
 name: Yifan Dou
-image: images/members/yifan.png
+image:
 description: Ph.D. Student
 affiliation: Florida State University
 role: phd
