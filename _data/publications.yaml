@@ -87,17 +87,18 @@
       year={2025}
     }
 
-- title: "Beyond Heuristics: Globally Optimal Configuration of Implicit Neural Representations"
+- title: "Closing the Capacity-Convergence Gap: Globally Optimal Configuration of Implicit Neural Representations"
   authors:
     - Sipeng Chen
     - Yan Zhang
     - Shibo Li
-  venue: arXiv preprint
-  short_venue: arXiv 2025
-  type: preprint
-  date: 2025-09-27
-  year: 2025
-  description: "OptiINR formulates implicit neural representation configuration as a principled global optimization problem and uses Bayesian optimization to jointly search activation families and initialization parameters for stronger, more stable performance."
+  venue: European Conference on Computer Vision
+  short_venue: ECCV 2026
+  status: Accepted
+  type: conference
+  date: 2026-06-20
+  year: 2026
+  description: "OptiINR closes the capacity-convergence gap in implicit neural representations by formulating activation and initialization configuration as a principled global optimization problem."
   banner: images/pub_banners/OptiINR.png
   buttons:
     - text: arXiv
@@ -107,9 +108,9 @@
       link: https://arxiv.org/pdf/2509.23139
       icon: fa-solid fa-file-pdf
   bibtex: |-
-    @article{chen2025optiinr,
-      title={Beyond Heuristics: Globally Optimal Configuration of Implicit Neural Representations},
+    @inproceedings{chen2026closing,
+      title={Closing the Capacity-Convergence Gap: Globally Optimal Configuration of Implicit Neural Representations},
       author={Chen, Sipeng and Zhang, Yan and Li, Shibo},
-      journal={arXiv preprint arXiv:2509.23139},
-      year={2025}
+      booktitle={European Conference on Computer Vision},
+      year={2026}
     }

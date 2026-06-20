@@ -1,3 +1,10 @@
+- date: 2026-06-20
+  title: ECCV 2026 acceptance
+  description: "The accepted ECCV 2026 paper, Closing the Capacity-Convergence Gap: Globally Optimal Configuration of Implicit Neural Representations, introduces OptiINR for principled global configuration of implicit neural representations."
+  congrats_name: Sipeng Chen
+  link: https://arxiv.org/abs/2509.23139
+  tag: Paper Accepted
+
 - date: 2026-04-01
   title: ICML 2026 acceptance
   description: "The accepted ICML 2026 paper introduces RAMBO, a Bayesian optimization framework that uses Dirichlet process mixtures of Gaussian processes to adapt to heterogeneous objective regimes and improve uncertainty-aware search across scientific design tasks."
