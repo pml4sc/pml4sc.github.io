@@ -5,25 +5,32 @@
 
 .news-feed {
   position: relative;
-  max-height: 520px;
-  padding: 18px;
-  overflow: hidden auto;
-  overflow-y: auto;
-  scroll-behavior: smooth;
+  padding: 0;
+  overflow: hidden;
 }
 
-.news-feed::-webkit-scrollbar {
+.news-feed__scroll {
+  max-height: 520px;
+  padding: 18px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  scrollbar-gutter: stable;
+}
+
+.news-feed__scroll::-webkit-scrollbar {
   width: 10px;
 }
 
-.news-feed::-webkit-scrollbar-thumb {
+.news-feed__scroll::-webkit-scrollbar-thumb {
   border: 2px solid transparent;
   border-radius: 999px;
   background: rgba(7, 149, 217, 0.28);
   background-clip: padding-box;
 }
 
-.news-feed::-webkit-scrollbar-track {
+.news-feed__scroll::-webkit-scrollbar-track {
+  margin: 18px 0;
   background: transparent;
 }
 
@@ -80,7 +87,7 @@
 }
 
 @media (max-width: 800px) {
-  .news-feed {
+  .news-feed__scroll {
     max-height: 460px;
   }
 }
