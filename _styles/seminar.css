@@ -1,0 +1,11 @@
+.seminar-content iframe[src*="youtube.com/embed"],
+.seminar-content iframe[src*="youtube-nocookie.com/embed"] {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  margin: 0 0 30px;
+  border: 0;
+}
+
+/*# sourceMappingURL=seminar.css.map */
