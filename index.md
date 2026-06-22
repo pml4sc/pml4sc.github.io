@@ -15,9 +15,11 @@ Developing probabilistic machine learning that quantifies uncertainty for robust
   </div>
 
   <div class="news-feed surface-panel">
-    {% for item in news %}
-      {% include news-item.html date=item.date title=item.title description=item.description congrats_name=item.congrats_name link=item.link tag=item.tag %}
-    {% endfor %}
+    <div class="news-feed__scroll">
+      {% for item in news %}
+        {% include news-item.html date=item.date title=item.title description=item.description congrats_name=item.congrats_name link=item.link tag=item.tag %}
+      {% endfor %}
+    </div>
   </div>
 </div>
 
