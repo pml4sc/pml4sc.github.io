@@ -70,8 +70,11 @@
   display: block;
   font-weight: var(--semi-bold);
   line-height: var(--compact);
-  text-decoration-thickness: 1px;
-  text-underline-offset: 3px;
+  text-decoration: none;
+}
+
+.seminar-content li a:hover {
+  text-decoration: none;
 }
 
 .seminar-content > p:has(> a:only-child) {
