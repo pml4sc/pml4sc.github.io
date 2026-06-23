@@ -75,8 +75,7 @@
 
 .publication-card__type,
 .publication-card__status,
-.publication-card__venue--short,
-.publication-year {
+.publication-card__venue--short {
   display: inline-flex;
 }
 
@@ -209,10 +208,6 @@
   padding: 0;
   background: none;
   color: inherit;
-}
-
-.publication-year {
-  margin: 40px 0 18px;
 }
 
 @media (max-width: 800px) {

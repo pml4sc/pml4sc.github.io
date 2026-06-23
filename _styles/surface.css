@@ -45,6 +45,47 @@
   font-size: 1.05rem;
 }
 
+.seminar-list > h3,
+.section-year-heading,
+.section-block-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--text);
+  font-family: var(--heading);
+  font-size: var(--xl);
+  font-weight: var(--semi-bold);
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.seminar-list > h3,
+.section-year-heading {
+  margin: 40px 0 20px;
+  padding: 0;
+  border: 0;
+}
+
+.section-block-heading {
+  margin: 0 0 20px;
+  padding: 0 0 12px;
+  border: 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--light-gray), transparent 35%);
+}
+
+.seminar-list > h3::before,
+.section-year-heading::before,
+.section-block-heading::before {
+  content: "";
+  display: inline-block;
+  flex: 0 0 auto;
+  width: 10px;
+  height: 24px;
+  border-radius: 4px;
+  background: var(--accent);
+}
+
 .surface-panel {
   border: 0;
   border-radius: 24px;
@@ -85,6 +126,9 @@
 @media (max-width: 800px) {
   .surface-panel {
     border-radius: 20px;
+  }
+  .section-block-heading {
+    font-size: var(--large);
   }
 }
 
