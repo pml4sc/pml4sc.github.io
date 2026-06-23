@@ -3,8 +3,14 @@
 
 // colors
 [data-dark="false"] {
-  --primary: #0795d9;
-  --secondary: #7dd3fc;
+  --accent: #0b7ea6;
+  --accent-muted: #5c8fa4;
+  --accent-soft: #dceff6;
+  --link: #096f93;
+  --link-hover: #0f172a;
+  --on-accent: #ffffff;
+  --primary: var(--accent);
+  --secondary: var(--accent-soft);
   --text: #000000;
   --background: #ffffff;
   --background-alt: #fafafa;
@@ -14,8 +20,14 @@
   --overlay: #00000020;
 }
 [data-dark="true"] {
-  --primary: #0795d9;
-  --secondary: #075985;
+  --accent: #5a94a5;
+  --accent-muted: #b4c6ce;
+  --accent-soft: #243940;
+  --link: #b4c6ce;
+  --link-hover: #eff7fa;
+  --on-accent: #101416;
+  --primary: var(--accent);
+  --secondary: var(--accent-soft);
   --text: #ffffff;
   --background: #181818;
   --background-alt: #1c1c1c;

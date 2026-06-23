@@ -11,10 +11,19 @@ $wrap: 800px;
 .post-excerpt {
   display: flex;
   margin: 20px 0;
+  border: 1px solid color-mix(in srgb, var(--accent), transparent 88%);
   border-radius: var(--rounded);
   background: var(--background);
   overflow: hidden;
   box-shadow: var(--shadow);
+  transition: border-color var(--transition), box-shadow var(--transition),
+    transform var(--transition);
+}
+
+.post-excerpt:hover {
+  border-color: color-mix(in srgb, var(--accent), transparent 62%);
+  box-shadow: 0 14px 30px var(--overlay);
+  transform: translateY(-1px);
 }
 
 .post-excerpt-image {
@@ -46,7 +55,13 @@ $wrap: 800px;
 
 .post-excerpt-text > a:first-child {
   width: 100%;
+  color: var(--link);
   font-weight: var(--semi-bold);
+  text-decoration: none;
+}
+
+.post-excerpt-text > a:first-child:hover {
+  color: var(--link-hover);
 }
 
 .post-excerpt-text > div {

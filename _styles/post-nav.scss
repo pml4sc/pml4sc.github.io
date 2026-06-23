@@ -4,19 +4,13 @@
 $wrap: 600px;
 
 .post-nav {
-  --post-nav-accent: var(--primary);
-  --post-nav-link: var(--primary);
-  --post-nav-link-hover: var(--text);
+  --post-nav-accent: var(--accent);
+  --post-nav-link: var(--link);
+  --post-nav-link-hover: var(--link-hover);
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 12px;
   color: var(--gray);
-}
-
-[data-dark="true"] .post-nav {
-  --post-nav-accent: #4aa3c2;
-  --post-nav-link: #a7c1cf;
-  --post-nav-link-hover: #e6f2f7;
 }
 
 .post-nav-card {

@@ -2,19 +2,13 @@
 ---
 
 .seminar-content {
-  --seminar-accent: var(--primary);
+  --seminar-accent: var(--accent);
   --seminar-border: color-mix(in srgb, var(--light-gray), transparent 20%);
-  --seminar-link: var(--primary);
-  --seminar-link-hover: var(--text);
+  --seminar-link: var(--link);
+  --seminar-link-hover: var(--link-hover);
   --seminar-panel: color-mix(in srgb, var(--background), var(--background-alt) 35%);
   display: grid;
   gap: 28px;
-}
-
-[data-dark="true"] .seminar-content {
-  --seminar-accent: #4aa3c2;
-  --seminar-link: #a7c1cf;
-  --seminar-link-hover: #e6f2f7;
 }
 
 .seminar-card {

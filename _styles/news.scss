@@ -28,7 +28,7 @@
 .news-feed__scroll::-webkit-scrollbar-thumb {
   border: 2px solid transparent;
   border-radius: 999px;
-  background: rgba(7, 149, 217, 0.28);
+  background: color-mix(in srgb, var(--accent), transparent 72%);
   background-clip: padding-box;
 }
 
@@ -51,7 +51,7 @@
 }
 
 .news-item:hover {
-  background: rgba(7, 149, 217, 0.05);
+  background: color-mix(in srgb, var(--accent), transparent 94%);
   transform: translateY(-1px);
 }
 
@@ -81,7 +81,7 @@
 }
 
 .news-item__title--link:hover {
-  color: var(--primary);
+  color: var(--link-hover);
 }
 
 .news-item__description {

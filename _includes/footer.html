@@ -15,7 +15,7 @@
     </div>
   -->
 
-  <div>
+  <div class="footer-links">
     {% for link in site.links %}
       {% assign key = link[0] %}
       {% assign value = link[1] %}
@@ -39,4 +39,32 @@
     aria-label="toggle dark mode"
     oninput="onDarkToggleChange(event)"
   >
+
+  {% assign visitor_map = site.visitor_map %}
+  {% if visitor_map.id %}
+    <div class="footer-map">
+      <a
+        class="footer-map-fallback"
+        href="https://clustrmaps.com/"
+        aria-label="Visitor map"
+      ></a>
+      <script
+        type="text/javascript"
+        id="clustrmaps"
+        src="https://clustrmaps.com/map_v2.js?d={{ visitor_map.id }}&cl={{ visitor_map.color | default: 'ffffff' }}&w={{ visitor_map.width | default: 270 }}&h={{ visitor_map.height | default: 180 }}"
+      ></script>
+      <script>
+        (() => {
+          const map = document.currentScript.parentElement;
+          const fallback = map.querySelector(".footer-map-fallback");
+          const update = () => {
+            const loaded = map.querySelector("img, iframe, object, canvas");
+            fallback.hidden = Boolean(loaded);
+          };
+          new MutationObserver(update).observe(map, { childList: true, subtree: true });
+          update();
+        })();
+      </script>
+    </div>
+  {% endif %}
 </footer>
