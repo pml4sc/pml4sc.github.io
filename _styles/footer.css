@@ -34,46 +34,6 @@ footer .icon {
   border-radius: 8px;
 }
 
-.footer-map-fallback {
-  position: relative;
-  display: block;
-  width: min(270px, 80vw);
-  aspect-ratio: 3/2;
-  border: 1px solid color-mix(in srgb, var(--accent), transparent 70%);
-  border-radius: 12px;
-  background: radial-gradient(circle at 20% 36%, var(--accent-muted) 0 3px, transparent 4px), radial-gradient(circle at 36% 46%, var(--accent-muted) 0 2px, transparent 3px), radial-gradient(circle at 51% 32%, var(--accent-muted) 0 3px, transparent 4px), radial-gradient(circle at 64% 52%, var(--accent-muted) 0 2px, transparent 3px), radial-gradient(circle at 78% 40%, var(--accent-muted) 0 3px, transparent 4px), linear-gradient(135deg, color-mix(in srgb, var(--accent), transparent 86%), transparent 55%), color-mix(in srgb, var(--background), var(--background-alt) 35%);
-  overflow: hidden;
-}
-
-.footer-map-fallback::before {
-  content: "";
-  position: absolute;
-  inset: 22px;
-  border: 1px solid color-mix(in srgb, var(--accent-muted), transparent 62%);
-  border-right: 0;
-  border-left: 0;
-  border-radius: 50%;
-  opacity: 0.6;
-}
-
-.footer-map-fallback::after {
-  content: "Visitor Map";
-  position: absolute;
-  left: 50%;
-  bottom: 18px;
-  color: var(--accent-muted);
-  font-family: var(--heading);
-  font-size: 0.78rem;
-  font-weight: var(--semi-bold);
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  transform: translateX(-50%);
-}
-
-.footer-map-fallback[hidden] {
-  display: none;
-}
-
 .footer-links {
   display: flex;
   justify-content: center;

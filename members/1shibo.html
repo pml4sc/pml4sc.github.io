@@ -598,20 +598,7 @@
   
   
     <div class="footer-map">
-      <a class="footer-map-fallback" href="https://clustrmaps.com/" aria-label="Visitor map"></a>
-      <script type="text/javascript" id="clustrmaps" src="https://clustrmaps.com/map_v2.js?d=9f1vHcMmMi84T7kaisYUV5xZjiW2LkL357lw086kTOs&cl=ffffff&w=270&h=180"></script>
-      <script>
-        (() => {
-          const map = document.currentScript.parentElement;
-          const fallback = map.querySelector(".footer-map-fallback");
-          const update = () => {
-            const loaded = map.querySelector("img, iframe, object, canvas");
-            fallback.hidden = Boolean(loaded);
-          };
-          new MutationObserver(update).observe(map, { childList: true, subtree: true });
-          update();
-        })();
-      </script>
+      <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=9f1vHcMmMi84T7kaisYUV5xZjiW2LkL357lw086kTOs&cl=ffffff&w=270&h=180"></script>
     </div>
   
 </footer>
