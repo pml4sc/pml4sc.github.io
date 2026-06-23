@@ -1,6 +1,6 @@
 .seminar-content {
   --seminar-accent: var(--accent);
-  --seminar-border: color-mix(in srgb, var(--light-gray), transparent 20%);
+  --seminar-border: var(--surface-border);
   --seminar-link: var(--link);
   --seminar-link-hover: var(--link-hover);
   --seminar-panel: color-mix(in srgb, var(--background), var(--background-alt) 35%);
@@ -13,14 +13,14 @@
   border: 1px solid var(--seminar-border);
   border-radius: 14px;
   background: var(--background);
-  box-shadow: 0 14px 36px color-mix(in srgb, var(--overlay), transparent 45%);
+  box-shadow: var(--surface-shadow);
   text-align: left;
   transition: border-color var(--transition), box-shadow var(--transition), transform var(--transition);
 }
 
 .seminar-card:hover {
-  border-color: color-mix(in srgb, var(--seminar-accent), var(--seminar-border) 45%);
-  box-shadow: 0 22px 48px color-mix(in srgb, var(--seminar-accent), transparent 86%);
+  border-color: var(--surface-border-strong);
+  box-shadow: var(--surface-shadow-hover);
   transform: translateY(-3px);
 }
 
@@ -57,7 +57,7 @@
   border: 1px solid var(--seminar-border);
   border-radius: 8px;
   background: #000000;
-  box-shadow: var(--shadow);
+  box-shadow: var(--surface-shadow);
 }
 
 .seminar-content ul {
@@ -81,8 +81,8 @@
 }
 
 .seminar-content li:hover {
-  border-color: var(--seminar-accent);
-  box-shadow: var(--shadow);
+  border-color: var(--surface-border-strong);
+  box-shadow: var(--surface-shadow-hover);
   transform: translateY(-1px);
 }
 
@@ -132,8 +132,8 @@
 }
 
 .seminar-content > p:has(> a:only-child) > a:hover {
-  border-color: var(--seminar-accent);
-  box-shadow: var(--shadow);
+  border-color: var(--surface-border-strong);
+  box-shadow: var(--surface-shadow-hover);
   color: var(--seminar-link-hover);
   text-decoration: none;
   transform: translateY(-1px);

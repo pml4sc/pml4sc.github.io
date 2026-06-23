@@ -10,9 +10,10 @@
   flex-shrink: 0;
   width: 40%;
   aspect-ratio: 3/2;
+  border: 1px solid var(--surface-border);
   border-radius: var(--rounded);
   overflow: hidden;
-  box-shadow: var(--shadow);
+  box-shadow: var(--surface-shadow);
 }
 
 .feature-image img {
