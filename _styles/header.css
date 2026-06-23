@@ -105,6 +105,7 @@ nav {
 }
 
 nav > a {
+  position: relative;
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -117,6 +118,25 @@ nav > a {
   letter-spacing: 0.08em;
   line-height: 1;
   transition: background var(--transition), color var(--transition), transform var(--transition);
+}
+
+nav > a + a::before {
+  content: "";
+  position: absolute;
+  left: -3px;
+  top: 50%;
+  width: 1px;
+  height: 1.15em;
+  background: color-mix(in srgb, var(--header-nav-border), transparent 18%);
+  transform: translateY(-50%);
+  transition: opacity var(--transition);
+}
+
+nav > a:hover::before,
+nav > a[aria-current=page]::before,
+nav > a:has(+ a:hover)::before,
+nav > a:has(+ a[aria-current=page])::before {
+  opacity: 0;
 }
 
 .site-nav__icon {
@@ -171,6 +191,14 @@ nav > a[aria-current=page] {
   header:not([data-big]) nav > a {
     justify-content: flex-end;
     width: 100%;
+  }
+  header:not([data-big]) nav > a + a::before {
+    left: 10px;
+    right: 10px;
+    top: -5px;
+    width: auto;
+    height: 1px;
+    transform: none;
   }
 }
 
