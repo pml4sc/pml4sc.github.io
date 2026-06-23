@@ -3,7 +3,7 @@
 
 {% assign news = site.data.news | sort: "date" | reverse %}
 
-<div class="home-intro surface-panel">
+<div class="home-intro home-section-shell surface-panel">
   <div class="home-section-heading">
     <span class="home-section-heading__mark"></span>
     <span class="home-section-heading__icon" aria-hidden="true">
@@ -17,7 +17,7 @@
 
 {% include section.html %}
 
-<div class="news-shell">
+<div class="news-shell home-section-shell">
   <div class="section-intro">
     <span class="section-intro__eyebrow">PML4SC News</span>
   </div>
@@ -33,15 +33,17 @@
 
 {% include section.html %}
 
-<div class="home-section-heading home-section-heading--center">
-  <span class="home-section-heading__mark"></span>
-  <span class="home-section-heading__icon" aria-hidden="true">
-    {% include icon.html icon="fa-solid fa-users" %}
-  </span>
-  <h1>Team Members</h1>
+<div class="home-team home-section-shell surface-panel">
+  <div class="home-section-heading">
+    <span class="home-section-heading__mark"></span>
+    <span class="home-section-heading__icon" aria-hidden="true">
+      {% include icon.html icon="fa-solid fa-users" %}
+    </span>
+    <h1>Team Members</h1>
+  </div>
+
+  <div class="home-team__grid">
+    {% include list.html data="members" component="portrait" filter="role == 'pi'" %}
+    {% include list.html data="members" component="portrait" filter="role != 'pi'" %}
+  </div>
 </div>
-
-{% include section.html %}
-
-{% include list.html data="members" component="portrait" filter="role == 'pi'" %}
-{% include list.html data="members" component="portrait" filter="role != 'pi'" %}
