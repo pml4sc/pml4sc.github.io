@@ -20,8 +20,52 @@
 }
 
 .member-card__portrait {
+  --portrait-highlight: rgba(255, 255, 255, 0.42);
+  --portrait-overlay: color-mix(in srgb, var(--accent), transparent 82%);
+  --portrait-ring: color-mix(in srgb, var(--accent), transparent 74%);
+  --portrait-glow: color-mix(in srgb, var(--accent), transparent 78%);
+  --portrait-icon-ring: color-mix(in srgb, var(--accent), transparent 72%);
+  --portrait-image-filter: brightness(1.06) saturate(1.06);
   position: relative;
   width: 180px;
+}
+
+[data-dark="true"] .member-card__portrait {
+  --portrait-highlight: rgba(255, 255, 255, 0.28);
+  --portrait-overlay: color-mix(in srgb, var(--accent-muted), transparent 72%);
+  --portrait-ring: color-mix(in srgb, var(--accent-muted), transparent 56%);
+  --portrait-glow: color-mix(in srgb, var(--accent-muted), transparent 66%);
+  --portrait-icon-ring: color-mix(in srgb, var(--accent-muted), transparent 58%);
+  --portrait-image-filter: brightness(1.08) saturate(1.05);
+}
+
+.member-card__portrait::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  aspect-ratio: 1 / 1;
+  border-radius: 999px;
+  background:
+    radial-gradient(
+      circle at 28% 22%,
+      var(--portrait-highlight),
+      transparent 30%
+    ),
+    linear-gradient(
+      135deg,
+      var(--portrait-overlay),
+      transparent 58%
+    );
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0.96);
+  transition: opacity var(--transition), transform var(--transition);
+  z-index: 2;
+}
+
+.member-card__portrait:hover::before {
+  opacity: 1;
+  transform: scale(1.045);
 }
 
 .member-card__portrait .icon {
@@ -38,16 +82,39 @@
   color: var(--accent);
   box-shadow: var(--surface-shadow);
   transform: translate(-12%, -12%);
-  z-index: 2;
+  transition: background var(--transition), color var(--transition),
+    box-shadow var(--transition);
+  z-index: 3;
+}
+
+.member-card__portrait:hover .icon {
+  background: var(--surface-background);
+  color: var(--accent);
+  box-shadow:
+    var(--surface-shadow),
+    0 0 0 3px var(--portrait-icon-ring);
 }
 
 .member-card__portrait img {
+  position: relative;
   display: block;
   width: 100%;
   aspect-ratio: 1 / 1;
   border-radius: 999px;
   object-fit: cover;
   box-shadow: var(--shadow);
+  transition: box-shadow var(--transition), filter var(--transition),
+    transform var(--transition);
+  z-index: 1;
+}
+
+.member-card__portrait:hover img {
+  filter: var(--portrait-image-filter);
+  box-shadow:
+    var(--surface-shadow-hover),
+    0 0 0 4px var(--portrait-ring),
+    0 0 34px var(--portrait-glow);
+  transform: scale(1.045);
 }
 
 .member-card__topline {
