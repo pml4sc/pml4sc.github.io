@@ -18,7 +18,13 @@ layout: default
 {% include section.html %}
 
 <div class="seminar-content">
-  {{ content }}
+  {% assign seminar_cards = content | split: "<h4" %}
+  {{ seminar_cards | first }}
+  {% for card in seminar_cards offset: 1 %}
+    <article class="seminar-card">
+      <h4{{ card }}
+    </article>
+  {% endfor %}
 </div>
 
 {% include section.html %}

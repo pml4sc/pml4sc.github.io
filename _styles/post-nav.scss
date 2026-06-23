@@ -4,17 +4,26 @@
 $wrap: 600px;
 
 .post-nav {
+  --post-nav-accent: var(--primary);
+  --post-nav-link: var(--primary);
+  --post-nav-link-hover: var(--text);
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 12px;
   color: var(--gray);
 }
 
+[data-dark="true"] .post-nav {
+  --post-nav-accent: #4aa3c2;
+  --post-nav-link: #a7c1cf;
+  --post-nav-link-hover: #e6f2f7;
+}
+
 .post-nav-card {
   min-height: 76px;
   padding: 14px 18px;
   border: 1px solid color-mix(in srgb, var(--light-gray), transparent 20%);
-  border-left: 4px solid var(--primary);
+  border-left: 4px solid var(--post-nav-accent);
   border-radius: 8px;
   background: color-mix(in srgb, var(--background), var(--background-alt) 35%);
   box-shadow: 0 1px 0 var(--overlay);
@@ -25,7 +34,7 @@ $wrap: 600px;
 }
 
 .post-nav-card:hover {
-  border-color: var(--primary);
+  border-color: var(--post-nav-accent);
   box-shadow: var(--shadow);
   transform: translateY(-1px);
 }
@@ -35,7 +44,7 @@ $wrap: 600px;
 }
 
 .post-nav-card .icon {
-  color: var(--primary);
+  color: var(--post-nav-accent);
 }
 
 .post-nav-card[data-direction="previous"] .icon {
@@ -49,14 +58,14 @@ $wrap: 600px;
 .post-nav-card a {
   display: block;
   margin-top: 8px;
-  color: var(--primary);
+  color: var(--post-nav-link);
   font-weight: var(--semi-bold);
   line-height: var(--compact);
   text-decoration: none;
 }
 
 .post-nav-card a:hover {
-  color: var(--text);
+  color: var(--post-nav-link-hover);
   text-decoration: none;
 }
 
