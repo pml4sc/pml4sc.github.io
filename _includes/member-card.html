@@ -1,0 +1,64 @@
+{% assign member = include.member %}
+{% assign member_anchor = member.anchor | default: member.slug %}
+{% assign type = site.data.types[member.role] %}
+{% assign portrait_image = member.image %}
+{% if portrait_image == nil or portrait_image == "" %}
+  {% assign portrait_image = "images/members/pml4sc-default.png" %}
+{% endif %}
+
+<article class="member-card surface-panel" id="{{ member_anchor }}">
+  <div class="member-card__portrait">
+    {% if type %}
+      {% include icon.html icon=type.icon %}
+    {% endif %}
+    <img
+      src="{{ portrait_image | relative_url | uri_escape }}"
+      alt="{{ member.name }} portrait"
+      loading="lazy"
+      {% include fallback.html %}
+    >
+  </div>
+
+  <div class="member-card__content">
+    <div class="member-card__topline">
+      {% if type %}
+        <span class="surface-chip surface-chip--soft">{{ type.description }}</span>
+      {% endif %}
+      {% if member.role == "principal-investigator" %}
+        <span class="surface-chip surface-chip--success">PI</span>
+      {% endif %}
+    </div>
+
+    <h2 class="member-card__name">{{ member.name }}</h2>
+
+    {% if member.description %}
+      <p class="member-card__description">{{ member.description }}</p>
+    {% elsif type %}
+      <p class="member-card__description">{{ type.description }}</p>
+    {% endif %}
+
+    {% if member.affiliation %}
+      <p class="member-card__affiliation">{{ member.affiliation }}</p>
+    {% endif %}
+
+    {% assign has_links = false %}
+    {% for link in member.links %}
+      {% assign value = link[1] %}
+      {% if value %}
+        {% assign has_links = true %}
+      {% endif %}
+    {% endfor %}
+
+    {% if has_links %}
+      <div class="member-card__links">
+        {% for link in member.links %}
+          {% assign key = link[0] %}
+          {% assign value = link[1] %}
+          {% if value %}
+            {% include button.html type=key link=value style="bare" %}
+          {% endif %}
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+</article>

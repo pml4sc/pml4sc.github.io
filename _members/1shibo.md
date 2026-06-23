@@ -1,5 +1,6 @@
 ---
 name: Shibo Li
+anchor: shibo
 image: images/members/shiboli.jpg
 role: principal-investigator
 affiliation: Florida State University

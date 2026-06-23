@@ -1,0 +1,154 @@
+---
+---
+
+.members-hero {
+  gap: 20px;
+}
+
+.members-stats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.members-stat {
+  padding: 18px 20px;
+  border-radius: 18px;
+}
+
+.members-stat strong {
+  display: block;
+  margin-bottom: 6px;
+  font-family: var(--heading);
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.members-stat span {
+  color: var(--dark-gray);
+}
+
+.members-grid {
+  display: grid;
+  gap: 22px;
+}
+
+.member-card {
+  display: grid;
+  grid-template-columns: 180px minmax(0, 1fr);
+  gap: 28px;
+  align-items: center;
+  padding: 28px;
+  text-align: left;
+}
+
+.member-card__portrait {
+  position: relative;
+  width: 180px;
+}
+
+.member-card__portrait .icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+  aspect-ratio: 1 / 1;
+  border-radius: 999px;
+  background: var(--surface-background);
+  color: var(--accent);
+  box-shadow: var(--surface-shadow);
+  transform: translate(-12%, -12%);
+  z-index: 2;
+}
+
+.member-card__portrait img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 999px;
+  object-fit: cover;
+  box-shadow: var(--shadow);
+}
+
+.member-card__topline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.member-card__name {
+  margin: 0 0 10px;
+  padding: 0;
+  border: 0;
+  color: var(--text);
+  font-size: clamp(1.4rem, 2vw, 2rem);
+  font-weight: var(--semi-bold);
+  line-height: 1.16;
+  text-align: left;
+}
+
+.member-card__description,
+.member-card__affiliation {
+  margin: 0;
+  color: var(--dark-gray);
+  line-height: var(--compact);
+  text-align: left;
+}
+
+.member-card__affiliation {
+  margin-top: 4px;
+}
+
+.member-card__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 10px;
+  margin-top: 18px;
+}
+
+.member-card__links .button {
+  margin: 0;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--accent), transparent 88%);
+  color: var(--link);
+}
+
+.member-card__links .button:hover {
+  background: color-mix(in srgb, var(--accent), transparent 80%);
+  color: var(--link-hover);
+}
+
+@media (max-width: 760px) {
+  .members-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .member-card {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 22px;
+    padding: 24px;
+  }
+
+  .member-card__content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .member-card__topline,
+  .member-card__links {
+    justify-content: center;
+  }
+
+  .member-card__name,
+  .member-card__description,
+  .member-card__affiliation {
+    text-align: center;
+  }
+}

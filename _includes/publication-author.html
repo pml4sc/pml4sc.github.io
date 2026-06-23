@@ -2,12 +2,13 @@
 {% assign matched_member = site.members | where: "name", author_name | first %}
 
 {% if matched_member %}
+  {% assign member_anchor = matched_member.anchor | default: matched_member.slug %}
   {% assign author_class = "publication-card__author publication-card__author--member" %}
   {% if matched_member.role == "principal-investigator" %}
     {% assign author_class = author_class | append: " publication-card__author--pi" %}
   {% endif %}
   <a
-    href="{{ matched_member.url | relative_url | uri_escape }}"
+    href="{{ "/members/" | relative_url }}#{{ member_anchor }}"
     class="{{ author_class }}"
   >
     {{ author_name }}
