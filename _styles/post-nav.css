@@ -14,6 +14,7 @@
   background: color-mix(in srgb, var(--background), var(--background-alt) 35%);
   box-shadow: 0 1px 0 var(--overlay);
   font-family: var(--heading);
+  text-align: left;
   transition: border-color var(--transition), box-shadow var(--transition), transform var(--transition);
 }
 
