@@ -51,15 +51,21 @@
 .publication-card__banner {
   position: relative;
   overflow: hidden;
-  padding: 14px 14px 0;
-  border-bottom: 1px solid color-mix(in srgb, var(--accent), transparent 86%);
-  background: var(--background);
+  padding: 12px;
+  background: var(--surface-background-alt);
 }
 
 .publication-card__banner-image {
   width: 100%;
   height: auto;
   display: block;
+  border-radius: 10px;
+  background: var(--surface-background);
+  transition: filter var(--transition), opacity var(--transition);
+}
+
+[data-dark="true"] .publication-card__banner-image {
+  filter: brightness(0.9) saturate(0.96);
 }
 
 .publication-card__topline {
