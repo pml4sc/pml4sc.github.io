@@ -31,7 +31,7 @@ nav:
 {% assign years = publications | group_by: "year" %}
 
 {% for year in years %}
-  <div class="publication-year surface-chip surface-chip--soft">{{ year.name }}</div>
+  <h3 class="section-year-heading publication-year" id="{{ year.name }}">{{ year.name }}</h3>
   <div class="publications-grid">
     {% for paper in year.items %}
       {%

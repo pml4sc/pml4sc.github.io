@@ -5,30 +5,6 @@
   gap: 20px;
 }
 
-.members-stats {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 16px;
-  margin-top: 12px;
-}
-
-.members-stat {
-  padding: 18px 20px;
-  border-radius: 18px;
-}
-
-.members-stat strong {
-  display: block;
-  margin-bottom: 6px;
-  font-family: var(--heading);
-  font-size: 2rem;
-  line-height: 1;
-}
-
-.members-stat span {
-  color: var(--dark-gray);
-}
-
 .members-grid {
   display: grid;
   gap: 22px;
@@ -125,10 +101,6 @@
 }
 
 @media (max-width: 760px) {
-  .members-stats {
-    grid-template-columns: 1fr;
-  }
-
   .member-card {
     grid-template-columns: 1fr;
     justify-items: center;
