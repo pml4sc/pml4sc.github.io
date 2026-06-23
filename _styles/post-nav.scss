@@ -16,19 +16,17 @@ $wrap: 600px;
 .post-nav-card {
   min-height: 76px;
   padding: 14px 18px;
-  border: 1px solid var(--surface-border);
+  border: 0;
   border-left: 4px solid var(--post-nav-accent);
   border-radius: 8px;
-  background: color-mix(in srgb, var(--background), var(--background-alt) 35%);
+  background: var(--surface-background);
   box-shadow: var(--surface-shadow);
   font-family: var(--heading);
   text-align: left;
-  transition: border-color var(--transition), box-shadow var(--transition),
-    transform var(--transition);
+  transition: box-shadow var(--transition), transform var(--transition);
 }
 
 .post-nav-card:hover {
-  border-color: var(--surface-border-strong);
   box-shadow: var(--surface-shadow-hover);
   transform: translateY(-1px);
 }

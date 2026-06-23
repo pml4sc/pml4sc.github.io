@@ -3,27 +3,25 @@
 
 .seminar-content {
   --seminar-accent: var(--accent);
-  --seminar-border: var(--surface-border);
+  --seminar-border: color-mix(in srgb, var(--light-gray), transparent 35%);
   --seminar-link: var(--link);
   --seminar-link-hover: var(--link-hover);
-  --seminar-panel: color-mix(in srgb, var(--background), var(--background-alt) 35%);
+  --seminar-panel: var(--surface-background-alt);
   display: grid;
   gap: 28px;
 }
 
 .seminar-card {
   padding: 32px;
-  border: 1px solid var(--seminar-border);
+  border: 0;
   border-radius: 14px;
-  background: var(--background);
+  background: var(--surface-background);
   box-shadow: var(--surface-shadow);
   text-align: left;
-  transition: border-color var(--transition), box-shadow var(--transition),
-    transform var(--transition);
+  transition: box-shadow var(--transition), transform var(--transition);
 }
 
 .seminar-card:hover {
-  border-color: var(--surface-border-strong);
   box-shadow: var(--surface-shadow-hover);
   transform: translateY(-3px);
 }
@@ -76,7 +74,7 @@
   position: relative;
   min-height: 54px;
   padding: 14px 18px;
-  border: 1px solid var(--seminar-border);
+  border: 0;
   border-left: 4px solid var(--seminar-accent);
   border-radius: 8px;
   background: var(--seminar-panel);
@@ -86,7 +84,6 @@
 }
 
 .seminar-content li:hover {
-  border-color: var(--surface-border-strong);
   box-shadow: var(--surface-shadow-hover);
   transform: translateY(-1px);
 }
@@ -115,7 +112,7 @@
   min-height: 54px;
   gap: 12px;
   padding: 14px 18px;
-  border: 1px solid var(--seminar-border);
+  border: 0;
   border-left: 4px solid var(--seminar-accent);
   border-radius: 8px;
   background: var(--seminar-panel);
@@ -138,7 +135,6 @@
 }
 
 .seminar-content > p:has(> a:only-child) > a:hover {
-  border-color: var(--surface-border-strong);
   box-shadow: var(--surface-shadow-hover);
   color: var(--seminar-link-hover);
   text-decoration: none;

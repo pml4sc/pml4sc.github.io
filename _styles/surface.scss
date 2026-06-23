@@ -15,7 +15,7 @@
   display: inline-flex;
   width: fit-content;
   padding: 9px 18px;
-  border: 1px solid var(--surface-border-strong);
+  border: 1px solid color-mix(in srgb, var(--accent-muted), transparent 64%);
   border-radius: 999px;
   color: var(--link);
   font-family: var(--heading);
@@ -45,7 +45,7 @@
 }
 
 .surface-panel {
-  border: 1px solid var(--surface-border);
+  border: 0;
   border-radius: 24px;
   background:
     radial-gradient(
@@ -53,13 +53,12 @@
       color-mix(in srgb, var(--accent), transparent 88%),
       transparent 34%
     ),
-    linear-gradient(180deg, var(--background-alt), var(--background));
+    linear-gradient(180deg, var(--surface-background-alt), var(--surface-background));
   box-shadow: var(--surface-shadow);
-  transition: border-color var(--transition), box-shadow var(--transition);
+  transition: box-shadow var(--transition), transform var(--transition);
 }
 
 .surface-panel:hover {
-  border-color: var(--surface-border-strong);
   box-shadow: var(--surface-shadow-hover);
 }
 

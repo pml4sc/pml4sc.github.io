@@ -9,18 +9,16 @@
   width: 350px;
   max-width: calc(100% - 20px - 20px);
   margin: 20px;
-  border: 1px solid var(--surface-border);
-  background: var(--background);
+  border: 0;
+  background: var(--surface-background);
   border-radius: var(--rounded);
   overflow: hidden;
   box-shadow: var(--surface-shadow);
   vertical-align: top;
-  transition: border-color var(--transition), box-shadow var(--transition),
-    transform var(--transition);
+  transition: box-shadow var(--transition), transform var(--transition);
 }
 
 .card:hover {
-  border-color: var(--surface-border-strong);
   box-shadow: var(--surface-shadow-hover);
   transform: translateY(-1px);
 }
