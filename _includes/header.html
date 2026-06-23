@@ -49,6 +49,28 @@
     %}
     {% for nav_page in pages %}
       {% if nav_page.nav %}
+        {% assign nav_icon = nav_page.nav.icon %}
+        {% unless nav_icon %}
+          {% assign nav_title = nav_page.title | downcase %}
+          {% if nav_title contains "seminar" %}
+            {% assign nav_icon = "fa-solid fa-chalkboard-user" %}
+          {% elsif nav_title contains "publication" %}
+            {% assign nav_icon = "fa-solid fa-book-open" %}
+          {% elsif nav_title contains "team" %}
+            {% assign nav_icon = "fa-solid fa-users" %}
+          {% elsif nav_title contains "research" %}
+            {% assign nav_icon = "fa-solid fa-flask" %}
+          {% elsif nav_title contains "project" %}
+            {% assign nav_icon = "fa-solid fa-briefcase" %}
+          {% elsif nav_title contains "blog" %}
+            {% assign nav_icon = "fa-solid fa-feather-pointed" %}
+          {% elsif nav_title contains "contact" %}
+            {% assign nav_icon = "fa-regular fa-envelope" %}
+          {% else %}
+            {% assign nav_icon = "fa-solid fa-circle-dot" %}
+          {% endif %}
+        {% endunless %}
+
         {% assign is_current = false %}
         {% if current_url == nav_page.url or current_url == nav_page.dir %}
           {% assign is_current = true %}
@@ -63,7 +85,10 @@
             aria-current="page"
           {% endif %}
         >
-          {{ nav_page.title }}
+          <span class="site-nav__icon" aria-hidden="true">
+            {% include icon.html icon=nav_icon %}
+          </span>
+          <span class="site-nav__text">{{ nav_page.title }}</span>
         </a>
       {% endif %}
     {% endfor %}
