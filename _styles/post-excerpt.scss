@@ -44,6 +44,7 @@ $wrap: 800px;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  min-width: 0;
   padding: 20px 30px;
   text-align: left;
 }
@@ -56,6 +57,7 @@ $wrap: 800px;
   width: 100%;
   color: var(--link);
   font-weight: var(--semi-bold);
+  overflow-wrap: anywhere;
   text-decoration: none;
 }
 
