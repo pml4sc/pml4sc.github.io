@@ -18,12 +18,13 @@
   box-shadow: var(--surface-shadow);
   font-family: var(--heading);
   text-align: left;
-  transition: box-shadow var(--transition), transform var(--transition);
+  transition: var(--surface-hover-transition);
+  will-change: transform;
 }
 
 .post-nav-card:hover {
   box-shadow: var(--surface-shadow-hover);
-  transform: translateY(-1px);
+  transform: var(--surface-hover-transform);
 }
 
 .post-nav-card[data-direction=next] {

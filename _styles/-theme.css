@@ -59,6 +59,8 @@
   --rounded: 3px;
   --shadow: 0 0 10px 0 var(--overlay);
   --transition: 0.2s ease;
+  --surface-hover-transform: translateY(-3px);
+  --surface-hover-transition: box-shadow var(--transition), transform var(--transition);
 }
 
 /*# sourceMappingURL=-theme.css.map */

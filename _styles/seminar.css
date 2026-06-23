@@ -36,12 +36,13 @@
   background: var(--surface-background);
   box-shadow: var(--surface-shadow);
   text-align: left;
-  transition: box-shadow var(--transition), transform var(--transition);
+  transition: var(--surface-hover-transition);
+  will-change: transform;
 }
 
 .seminar-card:hover {
   box-shadow: var(--surface-shadow-hover);
-  transform: translateY(-3px);
+  transform: var(--surface-hover-transform);
 }
 
 .seminar-card > :last-child {
@@ -97,12 +98,13 @@
   border-radius: 8px;
   background: var(--seminar-panel);
   box-shadow: 0 1px 0 var(--overlay);
-  transition: border-color var(--transition), box-shadow var(--transition), transform var(--transition);
+  transition: border-color var(--transition), var(--surface-hover-transition);
+  will-change: transform;
 }
 
 .seminar-content li:hover {
   box-shadow: var(--surface-shadow-hover);
-  transform: translateY(-1px);
+  transform: var(--surface-hover-transform);
 }
 
 .seminar-content li a {
@@ -142,7 +144,8 @@
   font-family: var(--heading);
   font-weight: var(--semi-bold);
   text-decoration: none;
-  transition: border-color var(--transition), box-shadow var(--transition), color var(--transition), transform var(--transition);
+  transition: border-color var(--transition), color var(--transition), var(--surface-hover-transition);
+  will-change: transform;
 }
 
 .seminar-card > p:has(> a:only-child) > a::before {
@@ -158,7 +161,7 @@
   box-shadow: var(--surface-shadow-hover);
   color: var(--seminar-link-hover);
   text-decoration: none;
-  transform: translateY(-1px);
+  transform: var(--surface-hover-transform);
 }
 
 @media (max-width: 700px) {

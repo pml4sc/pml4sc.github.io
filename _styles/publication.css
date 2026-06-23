@@ -34,7 +34,8 @@
 .publication-card {
   overflow: hidden;
   padding: 0;
-  transition: transform var(--transition), box-shadow var(--transition), background var(--transition);
+  transition: background var(--transition), var(--surface-hover-transition);
+  will-change: transform;
 }
 
 .publication-card__content {
@@ -42,7 +43,7 @@
 }
 
 .publication-card:hover {
-  transform: translateY(-1px);
+  transform: var(--surface-hover-transform);
 }
 
 .publication-card__banner {

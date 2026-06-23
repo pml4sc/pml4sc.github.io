@@ -50,11 +50,13 @@
   border-radius: 24px;
   background: radial-gradient(circle at top right, color-mix(in srgb, var(--accent), transparent 88%), transparent 34%), linear-gradient(180deg, var(--surface-background-alt), var(--surface-background));
   box-shadow: var(--surface-shadow);
-  transition: box-shadow var(--transition), transform var(--transition);
+  transition: var(--surface-hover-transition);
+  will-change: transform;
 }
 
 .surface-panel:hover {
   box-shadow: var(--surface-shadow-hover);
+  transform: var(--surface-hover-transform);
 }
 
 .surface-chip {
