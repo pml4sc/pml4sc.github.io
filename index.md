@@ -3,9 +3,17 @@
 
 {% assign news = site.data.news | sort: "date" | reverse %}
 
-# Welcome 
+<div class="home-intro surface-panel">
+  <div class="home-section-heading">
+    <span class="home-section-heading__mark"></span>
+    <span class="home-section-heading__icon" aria-hidden="true">
+      {% include icon.html icon="fa-solid fa-bolt" %}
+    </span>
+    <h1>Welcome</h1>
+  </div>
 
-Developing probabilistic machine learning that quantifies uncertainty for robust scientific computing. Creating algorithms that deliver predictions with confidence estimates, empowering scientists to make informed decisions at the intersection of models and data.
+  <p class="home-intro__text">Developing probabilistic machine learning that quantifies uncertainty for robust scientific computing. Creating algorithms that deliver predictions with confidence estimates, empowering scientists to make informed decisions at the intersection of models and data.</p>
+</div>
 
 {% include section.html %}
 
@@ -25,7 +33,13 @@ Developing probabilistic machine learning that quantifies uncertainty for robust
 
 {% include section.html %}
 
-# {% include icon.html icon="fa-solid fa-users" %}Team Members
+<div class="home-section-heading home-section-heading--center">
+  <span class="home-section-heading__mark"></span>
+  <span class="home-section-heading__icon" aria-hidden="true">
+    {% include icon.html icon="fa-solid fa-users" %}
+  </span>
+  <h1>Team Members</h1>
+</div>
 
 {% include section.html %}
 
