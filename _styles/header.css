@@ -107,6 +107,7 @@ nav {
 nav > a {
   display: inline-flex;
   align-items: center;
+  gap: 8px;
   min-height: 34px;
   padding: 8px 14px;
   border-radius: 999px;
@@ -118,10 +119,31 @@ nav > a {
   transition: background var(--transition), color var(--transition), transform var(--transition);
 }
 
+.site-nav__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.1em;
+  color: color-mix(in srgb, var(--header-link), transparent 20%);
+  font-size: 0.92em;
+  line-height: 1;
+  transition: color var(--transition), transform var(--transition);
+}
+
+.site-nav__icon .icon {
+  font-size: 1em;
+}
+
 nav > a:hover,
 nav > a[aria-current=page] {
   background: var(--header-nav-hover);
   color: var(--link-hover);
+}
+
+nav > a:hover .site-nav__icon,
+nav > a[aria-current=page] .site-nav__icon {
+  color: var(--accent);
+  transform: scale(1.08);
 }
 
 nav > a[aria-current=page] {
