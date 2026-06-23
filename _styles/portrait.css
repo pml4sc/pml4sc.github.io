@@ -11,6 +11,7 @@
   margin: 20px;
   width: 175px;
   max-width: calc(100% - 20px - 20px);
+  color: var(--text);
   text-decoration: none;
 }
 
@@ -36,6 +37,7 @@
   aspect-ratio: 1/1;
   border-radius: 999px;
   background: var(--background);
+  color: var(--accent-muted);
   box-shadow: var(--shadow);
   transform: translate(14%, 14%);
 }
@@ -64,8 +66,19 @@
 }
 
 .portrait-name {
+  color: var(--text);
   font-family: var(--heading);
   font-weight: var(--semi-bold);
+  transition: color var(--transition);
+}
+
+.portrait:hover .portrait-name {
+  color: var(--link);
+}
+
+.portrait-description,
+.portrait-affiliation {
+  color: var(--dark-gray);
 }
 
 .portrait[data-style=tiny] .portrait-description,

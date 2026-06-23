@@ -1,11 +1,11 @@
 a {
-  color: var(--primary);
+  color: var(--link);
   transition: color var(--transition);
   overflow-wrap: break-word;
 }
 
 a:hover {
-  color: var(--text);
+  color: var(--link-hover);
 }
 
 a:not([href]) {

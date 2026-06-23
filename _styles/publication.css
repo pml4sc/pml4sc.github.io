@@ -49,7 +49,7 @@
   position: relative;
   overflow: hidden;
   padding: 14px 14px 0;
-  border-bottom: 1px solid rgba(7, 149, 217, 0.12);
+  border-bottom: 1px solid color-mix(in srgb, var(--accent), transparent 86%);
   background: var(--background);
 }
 
@@ -102,15 +102,15 @@
   color: var(--text);
   font-weight: var(--semi-bold);
   text-decoration: underline;
-  text-decoration-color: rgba(7, 149, 217, 0.65);
+  text-decoration-color: color-mix(in srgb, var(--accent), transparent 35%);
   text-decoration-thickness: 2px;
   text-underline-offset: 0.16em;
   transition: color var(--transition), text-decoration-color var(--transition);
 }
 
 .publication-card__author--member:hover {
-  color: var(--primary);
-  text-decoration-color: var(--primary);
+  color: var(--link-hover);
+  text-decoration-color: var(--accent);
 }
 
 .publication-card__author--pi {
@@ -160,6 +160,7 @@
 .publication-card__buttons .button {
   margin: 0;
   border-radius: 999px;
+  box-shadow: 0 8px 18px color-mix(in srgb, var(--accent), transparent 86%);
 }
 
 .publication-card__cite-toggle,
