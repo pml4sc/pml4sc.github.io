@@ -9,4 +9,6 @@ nav:
   {% include page-kicker.html %}
 </div>
 
-{% include list.html data="seminar" component="post-excerpt" %}
+<div class="seminar-list">
+  {% include list.html data="seminar" component="post-excerpt" %}
+</div>
