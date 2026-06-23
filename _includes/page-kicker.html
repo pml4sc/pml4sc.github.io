@@ -1,0 +1,8 @@
+{% assign kicker_text = include.text %}
+{% unless kicker_text %}
+  {% assign kicker_prefix = include.prefix | default: site.title %}
+  {% assign kicker_title = include.title | default: page.title %}
+  {% assign kicker_text = kicker_prefix | append: " " | append: kicker_title %}
+{% endunless %}
+
+<span class="section-intro__eyebrow page-kicker">{{ kicker_text }}</span>

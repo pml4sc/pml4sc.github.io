@@ -9,7 +9,7 @@ nav:
 {% assign accepted_count = site.data.publications | where: "status", "Accepted" | size %}
 
 <div class="section-intro publications-hero">
-  <span class="section-intro__eyebrow">PML4SC Publications</span>
+  {% include page-kicker.html %}
   <div class="publications-stats">
     <div class="publications-stat surface-panel">
       <strong>{{ site.data.publications | size }}</strong>

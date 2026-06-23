@@ -5,6 +5,8 @@ nav:
   # tooltip: Musings and miscellany
 ---
 
-# Seminar
+<div class="section-intro page-heading">
+  {% include page-kicker.html %}
+</div>
 
 {% include list.html data="seminar" component="post-excerpt" %}
