@@ -1,4 +1,9 @@
 header {
+  --header-link: color-mix(in srgb, var(--text), transparent 7%);
+  --header-nav-bg: color-mix(in srgb, var(--surface-background), transparent 24%);
+  --header-nav-border: color-mix(in srgb, var(--accent-muted), transparent 58%);
+  --header-nav-hover: color-mix(in srgb, var(--accent), transparent 88%);
+  --header-nav-active: color-mix(in srgb, var(--accent), transparent 80%);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -12,7 +17,7 @@ header {
 }
 
 header a {
-  color: var(--text);
+  color: var(--header-link);
   text-decoration: none;
 }
 
@@ -42,6 +47,7 @@ header a {
   flex-wrap: wrap;
   gap: 5px;
   min-width: 0;
+  max-width: 100%;
   font-family: var(--title);
   text-align: left;
 }
@@ -53,6 +59,7 @@ header a {
 .subtitle {
   opacity: 0.65;
   font-weight: var(--thin);
+  overflow-wrap: anywhere;
 }
 
 .nav-toggle {
@@ -87,17 +94,39 @@ nav {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 4px;
+  padding: 6px;
+  border: 1px solid var(--header-nav-border);
+  border-radius: 999px;
+  background: var(--header-nav-bg);
+  box-shadow: 0 10px 24px color-mix(in srgb, var(--overlay), transparent 44%);
   font-family: var(--heading);
   text-transform: uppercase;
 }
 
 nav > a {
-  padding: 5px;
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  color: var(--header-link);
+  font-size: 0.92rem;
+  font-weight: var(--semi-bold);
+  letter-spacing: 0.08em;
+  line-height: 1;
+  transition: background var(--transition), color var(--transition), transform var(--transition);
 }
 
-nav > a:hover {
+nav > a:hover,
+nav > a[aria-current=page] {
+  background: var(--header-nav-hover);
   color: var(--link-hover);
+}
+
+nav > a[aria-current=page] {
+  background: var(--header-nav-active);
+  color: var(--text);
 }
 
 @media (max-width: 700px) {
@@ -114,6 +143,12 @@ nav > a:hover {
     align-items: flex-end;
     flex-direction: column;
     width: 100%;
+    padding: 10px;
+    border-radius: 18px;
+  }
+  header:not([data-big]) nav > a {
+    justify-content: flex-end;
+    width: 100%;
   }
 }
 
@@ -127,6 +162,7 @@ header[data-big] {
 header[data-big] .home {
   flex-direction: column;
   flex-grow: 0;
+  width: min(100%, 760px);
 }
 header[data-big] .logo {
   height: 80px;
@@ -142,6 +178,10 @@ header[data-big] .title {
 }
 header[data-big] .subtitle {
   font-size: var(--large);
+  text-align: center;
+}
+header[data-big] nav {
+  margin-top: 6px;
 }
 
 /*# sourceMappingURL=header.css.map */
