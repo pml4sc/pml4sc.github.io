@@ -11,10 +11,19 @@ $wrap: 800px;
 .citation {
   display: flex;
   margin: 20px 0;
+  border: 1px solid var(--surface-border);
   border-radius: var(--rounded);
   background: var(--background);
   overflow: hidden;
-  box-shadow: var(--shadow);
+  box-shadow: var(--surface-shadow);
+  transition: border-color var(--transition), box-shadow var(--transition),
+    transform var(--transition);
+}
+
+.citation:hover {
+  border-color: var(--surface-border-strong);
+  box-shadow: var(--surface-shadow-hover);
+  transform: translateY(-1px);
 }
 
 .citation-image {

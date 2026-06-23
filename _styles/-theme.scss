@@ -9,6 +9,10 @@
   --link: #096f93;
   --link-hover: #0f172a;
   --on-accent: #ffffff;
+  --surface-border: color-mix(in srgb, var(--accent), transparent 84%);
+  --surface-border-strong: color-mix(in srgb, var(--accent), transparent 62%);
+  --surface-shadow: 0 18px 40px var(--overlay);
+  --surface-shadow-hover: 0 22px 48px color-mix(in srgb, var(--accent), transparent 86%);
   --primary: var(--accent);
   --secondary: var(--accent-soft);
   --text: #000000;
@@ -26,6 +30,12 @@
   --link: #b4c6ce;
   --link-hover: #eff7fa;
   --on-accent: #101416;
+  --surface-border: color-mix(in srgb, var(--accent-muted), transparent 56%);
+  --surface-border-strong: color-mix(in srgb, var(--accent-muted), transparent 34%);
+  --surface-shadow: 0 18px 42px #00000066,
+    0 0 0 1px color-mix(in srgb, var(--accent-muted), transparent 80%);
+  --surface-shadow-hover: 0 24px 54px #00000080,
+    0 0 0 1px color-mix(in srgb, var(--accent-muted), transparent 64%);
   --primary: var(--accent);
   --secondary: var(--accent-soft);
   --text: #ffffff;

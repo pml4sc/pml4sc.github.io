@@ -6,12 +6,12 @@ input[type="text"] {
   height: 40px;
   margin: 0;
   padding: 5px 10px;
-  border: solid 1px var(--light-gray);
+  border: solid 1px var(--surface-border);
   border-radius: var(--rounded);
   background: var(--background);
   color: var(--text);
   font-family: inherit;
   font-size: inherit;
   appearance: none;
-  box-shadow: var(--shadow);
+  box-shadow: var(--surface-shadow);
 }

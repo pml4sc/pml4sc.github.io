@@ -16,11 +16,11 @@ $wrap: 600px;
 .post-nav-card {
   min-height: 76px;
   padding: 14px 18px;
-  border: 1px solid color-mix(in srgb, var(--light-gray), transparent 20%);
+  border: 1px solid var(--surface-border);
   border-left: 4px solid var(--post-nav-accent);
   border-radius: 8px;
   background: color-mix(in srgb, var(--background), var(--background-alt) 35%);
-  box-shadow: 0 1px 0 var(--overlay);
+  box-shadow: var(--surface-shadow);
   font-family: var(--heading);
   text-align: left;
   transition: border-color var(--transition), box-shadow var(--transition),
@@ -28,8 +28,8 @@ $wrap: 600px;
 }
 
 .post-nav-card:hover {
-  border-color: var(--post-nav-accent);
-  box-shadow: var(--shadow);
+  border-color: var(--surface-border-strong);
+  box-shadow: var(--surface-shadow-hover);
   transform: translateY(-1px);
 }
 
