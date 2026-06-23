@@ -3,23 +3,36 @@
 */
 
 {
-  // immediately load saved (or default) mode before page renders
-  document.documentElement.dataset.dark =
-    window.localStorage.getItem("dark-mode") ?? "false";
+  const getSavedMode = () => window.localStorage.getItem("dark-mode") ?? "false";
 
-  const onLoad = () => {
-    // update toggle button to match loaded mode
-    document.querySelector(".dark-toggle").checked =
-      document.documentElement.dataset.dark === "true";
+  const setMode = (value) => {
+    document.documentElement.dataset.dark = value;
+    window.localStorage.setItem("dark-mode", value);
+    syncToggles();
   };
 
-  // after page loads
-  window.addEventListener("load", onLoad);
+  const syncToggles = () => {
+    const dark = document.documentElement.dataset.dark === "true";
+    document.querySelectorAll(".dark-toggle").forEach((toggle) => {
+      toggle.checked = dark;
+      toggle.setAttribute("aria-checked", dark);
+    });
+  };
+
+  // immediately load saved (or default) mode before page renders
+  document.documentElement.dataset.dark = getSavedMode();
+
+  // Sync as soon as controls exist. Waiting for window load can be delayed by
+  // third-party footer widgets, which makes the toggle appear out of state.
+  document.addEventListener("DOMContentLoaded", syncToggles);
+  window.addEventListener("load", syncToggles);
+  new MutationObserver(syncToggles).observe(document.documentElement, {
+    childList: true,
+    subtree: true,
+  });
 
   // when user toggles mode button
   window.onDarkToggleChange = (event) => {
-    const value = event.target.checked;
-    document.documentElement.dataset.dark = value;
-    window.localStorage.setItem("dark-mode", value);
+    setMode(event.target.checked ? "true" : "false");
   };
 }
