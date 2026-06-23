@@ -44,6 +44,7 @@
   padding: 18px 20px;
   border-radius: 18px;
   transition: background var(--transition), transform var(--transition);
+  will-change: transform;
 }
 
 .news-item + .news-item {
@@ -52,7 +53,7 @@
 
 .news-item:hover {
   background: color-mix(in srgb, var(--accent), transparent 94%);
-  transform: translateY(-1px);
+  transform: var(--surface-hover-transform);
 }
 
 .news-item__meta {

@@ -16,12 +16,13 @@ $wrap: 800px;
   background: var(--surface-background);
   overflow: hidden;
   box-shadow: var(--surface-shadow);
-  transition: box-shadow var(--transition), transform var(--transition);
+  transition: var(--surface-hover-transition);
+  will-change: transform;
 }
 
 .post-excerpt:hover {
   box-shadow: var(--surface-shadow-hover);
-  transform: translateY(-1px);
+  transform: var(--surface-hover-transform);
 }
 
 .post-excerpt-image {

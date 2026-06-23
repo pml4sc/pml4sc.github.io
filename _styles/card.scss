@@ -15,12 +15,13 @@
   overflow: hidden;
   box-shadow: var(--surface-shadow);
   vertical-align: top;
-  transition: box-shadow var(--transition), transform var(--transition);
+  transition: var(--surface-hover-transition);
+  will-change: transform;
 }
 
 .card:hover {
   box-shadow: var(--surface-shadow-hover);
-  transform: translateY(-1px);
+  transform: var(--surface-hover-transform);
 }
 
 .card[data-style="small"] {

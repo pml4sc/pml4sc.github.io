@@ -59,11 +59,13 @@
     ),
     linear-gradient(180deg, var(--surface-background-alt), var(--surface-background));
   box-shadow: var(--surface-shadow);
-  transition: box-shadow var(--transition), transform var(--transition);
+  transition: var(--surface-hover-transition);
+  will-change: transform;
 }
 
 .surface-panel:hover {
   box-shadow: var(--surface-shadow-hover);
+  transform: var(--surface-hover-transform);
 }
 
 .surface-chip {
