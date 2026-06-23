@@ -8,6 +8,10 @@ affiliation: Florida State University
 #   - J. Smith
 #   - J Smith
 links:
+  email: shibo.li@fsu.edu
+  google-scholar: thvPDwgAAAAJ&hl=en
+  github: shib0li
+  linkedin: shibo-li-7903581ba/
   home-page: https://imshibo.com/
   # orcid: 0000-0001-8713-9213
 ---

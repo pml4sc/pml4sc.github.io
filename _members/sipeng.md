@@ -5,9 +5,8 @@ description: Ph.D. Student
 affiliation: Florida State University
 role: phd
 links:
-  email: 
-  google-scholar: 
+  email: sc25bg@fsu.edu
+  google-scholar: 9rUzkMUAAAAJ&hl=en
   github: 
   home-page: 
 ---
-
