@@ -21,6 +21,9 @@
     - text: PDF
       link: https://arxiv.org/pdf/2601.20043
       icon: fa-solid fa-file-pdf
+    - text: Code
+      link: https://github.com/AnthonyZhangYan/RAMBO
+      icon: fa-brands fa-github
   bibtex: |-
     @article{zhang2026rambo,
       title={Regime-Adaptive {Bayesian} Optimization via {Dirichlet} Process Mixtures of {Gaussian} Processes},
