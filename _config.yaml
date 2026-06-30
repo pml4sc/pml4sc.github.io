@@ -20,6 +20,7 @@ links:
 # visitor map widget (MapMyVisitors globe — formerly ClustrMaps)
 visitor_map:
   id: 8qWTPOadFErtk4G7NTvSuOCJEhBaL5ExUiwH2aHAZzw
+  link: https://mapmyvisitors.com/web/1c638
 
 ### jekyll settings
 

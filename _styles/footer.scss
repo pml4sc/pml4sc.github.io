@@ -40,6 +40,12 @@ footer .icon {
   border-radius: 8px;
 }
 
+.footer-map-link {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+}
+
 .footer-links {
   display: flex;
   justify-content: center;

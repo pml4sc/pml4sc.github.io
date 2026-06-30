@@ -48,6 +48,15 @@
         id="mmvst_globe"
         src="//mapmyvisitors.com/globe.js?d={{ visitor_map.id }}"
       ></script>
+      {% if visitor_map.link %}
+        <a
+          class="footer-map-link"
+          href="{{ visitor_map.link }}"
+          target="_blank"
+          rel="noopener"
+          aria-label="View visitor stats"
+        ></a>
+      {% endif %}
     </div>
   {% endif %}
 </footer>
