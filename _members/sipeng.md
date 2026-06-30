@@ -7,6 +7,6 @@ role: phd
 links:
   email: sc25bg@fsu.edu
   google-scholar: 9rUzkMUAAAAJ&hl=en
-  github: 
-  home-page: 
+  github: Sippengg
+  home-page: https://sippengg.github.io
 ---
