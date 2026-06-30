@@ -17,4 +17,19 @@
   z-index: -1;
 }
 
+html[data-dark=false] header.background,
+html[data-dark=false] footer.background {
+  --image: url("/images/bg-light.png");
+}
+
+html[data-dark=true] header.background,
+html[data-dark=true] footer.background {
+  --image: url("/images/bg-dark.png");
+}
+
+header.background:before,
+footer.background:before {
+  opacity: 1;
+}
+
 /*# sourceMappingURL=background.css.map */
