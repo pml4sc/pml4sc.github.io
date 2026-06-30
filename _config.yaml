@@ -17,11 +17,9 @@ links:
   # twitter: 
   # youtube: pml4sc
 
-# visitor map widget (MapMyVisitors, formerly ClustrMaps)
+# visitor map widget (MapMyVisitors globe — formerly ClustrMaps)
 visitor_map:
-  id: 9f1vHcMmMi84T7kaisYUV5xZjiW2LkL357lw086kTOs
-  color: ffffff
-  width: 270
+  id: 8qWTPOadFErtk4G7NTvSuOCJEhBaL5ExUiwH2aHAZzw
 
 ### jekyll settings
 
