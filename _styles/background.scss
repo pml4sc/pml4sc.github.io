@@ -19,3 +19,23 @@
   opacity: 0.25;
   z-index: -1;
 }
+
+// header & footer hero backgrounds follow the runtime light/dark toggle
+// (the toggle sets data-dark on <html>; see _scripts/dark-mode.js)
+html[data-dark="false"] header.background,
+html[data-dark="false"] footer.background {
+  --image: url("/images/bg-light.png");
+}
+
+html[data-dark="true"] header.background,
+html[data-dark="true"] footer.background {
+  --image: url("/images/bg-dark.png");
+}
+
+// these two images are purpose-built full hero backgrounds (clear center,
+// faint pattern at the edges), so show them at full strength instead of the
+// subtle 0.25 used for generic photo backgrounds
+header.background:before,
+footer.background:before {
+  opacity: 1;
+}
