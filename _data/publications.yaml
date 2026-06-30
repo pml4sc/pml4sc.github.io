@@ -54,6 +54,9 @@
     - text: PDF
       link: https://arxiv.org/pdf/2501.17296
       icon: fa-solid fa-file-pdf
+    - text: Code
+      link: "#"
+      icon: fa-brands fa-github
   bibtex: |-
     @article{qu2025compol,
       title={{COMPOL}: A Unified Neural Operator Framework for Scalable Multi-Physics Simulations},
@@ -82,6 +85,9 @@
     - text: PDF
       link: https://arxiv.org/pdf/2601.00088
       icon: fa-solid fa-file-pdf
+    - text: Code
+      link: "#"
+      icon: fa-brands fa-github
   bibtex: |-
     @article{qu2025neurosymbo,
       title={Dynamic {Bayesian} Optimization Framework for Instruction Tuning in Partial Differential Equation Discovery},
@@ -110,6 +116,9 @@
     - text: PDF
       link: https://arxiv.org/pdf/2509.23139
       icon: fa-solid fa-file-pdf
+    - text: Code
+      link: "#"
+      icon: fa-brands fa-github
   bibtex: |-
     @inproceedings{chen2026closing,
       title={Closing the Capacity-Convergence Gap: Globally Optimal Configuration of Implicit Neural Representations},
