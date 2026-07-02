@@ -41,11 +41,6 @@
   {% assign visitor_map = site.visitor_map %}
   {% if visitor_map.id %}
     <div class="footer-map">
-      <script
-        type="text/javascript"
-        id="mmvst_globe"
-        src="//mapmyvisitors.com/globe.js?d={{ visitor_map.id }}"
-      ></script>
       {% if visitor_map.link %}
         <a
           class="footer-map-link"
@@ -53,7 +48,12 @@
           target="_blank"
           rel="noopener"
           aria-label="View visitor stats"
-        ></a>
+        >
+          <img
+            src="https://mapmyvisitors.com/map.png?d={{ visitor_map.id }}&cl=ffffff"
+            alt="Visitor map"
+          >
+        </a>
       {% endif %}
     </div>
   {% endif %}
