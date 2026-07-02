@@ -24,18 +24,34 @@ footer .icon {
 .footer-map {
   display: flex;
   justify-content: center;
-  width: 180px;
+  width: 188px;
   max-width: 100%;
+  padding: 7px;
+  border: 1px solid color-mix(in srgb, var(--text) 12%, transparent);
+  border-radius: 12px;
+  background: linear-gradient(135deg, color-mix(in srgb, var(--background) 90%, white), color-mix(in srgb, var(--link) 12%, transparent));
+  box-shadow: 0 12px 30px color-mix(in srgb, var(--text) 10%, transparent);
 }
 
 .footer-map img {
   display: block;
+  width: 100%;
   max-width: 100%;
-  border-radius: 8px;
+  border-radius: 7px;
+  filter: saturate(0.82) contrast(0.96);
 }
 
 .footer-map-link {
   display: block;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 7px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.footer-map-link:hover {
+  transform: translateY(-1px);
+  opacity: 0.92;
 }
 
 .footer-links {
