@@ -2,12 +2,13 @@
 ---
 
 .news-shell {
-  display: grid;
-  gap: 14px;
+  padding: 34px 38px;
+  text-align: left;
 }
 
 .news-feed {
   position: relative;
+  margin-top: 30px;
   padding: 0;
   overflow: hidden;
 }
@@ -93,5 +94,15 @@
 @media (max-width: 800px) {
   .news-feed__scroll {
     max-height: 460px;
+  }
+}
+
+@media (max-width: 700px) {
+  .news-shell {
+    padding: 26px 22px;
+  }
+
+  .news-feed {
+    margin-top: 24px;
   }
 }

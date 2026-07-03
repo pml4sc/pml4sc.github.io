@@ -17,12 +17,16 @@
 
 {% include section.html %}
 
-<div class="news-shell home-section-shell">
-  <div class="section-intro">
-    <span class="section-intro__eyebrow">PML4SC News</span>
+<div class="news-shell home-section-shell surface-panel">
+  <div class="home-section-heading">
+    <span class="home-section-heading__mark"></span>
+    <span class="home-section-heading__icon" aria-hidden="true">
+      {% include icon.html icon="fa-solid fa-newspaper" %}
+    </span>
+    <h1>News</h1>
   </div>
 
-  <div class="news-feed surface-panel">
+  <div class="news-feed">
     <div class="news-feed__scroll">
       {% for item in news %}
         {% include news-item.html date=item.date title=item.title description=item.description congrats_name=item.congrats_name link=item.link tag=item.tag %}
