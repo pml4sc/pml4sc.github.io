@@ -18,6 +18,14 @@
   text-align: left;
 }
 
+.home-intro__text p {
+  margin: 0;
+}
+
+.home-intro__text p + p {
+  margin-top: 12px;
+}
+
 .home-section-heading {
   display: flex;
   align-items: center;
