@@ -50,7 +50,7 @@
 }
 
 .news-item:hover {
-  background: linear-gradient(90deg, transparent, color-mix(in srgb, var(--accent), transparent 94%) 18px, color-mix(in srgb, var(--accent), transparent 94%) calc(100% - 18px), transparent);
+  background: color-mix(in srgb, var(--accent), transparent 94%);
   transform: var(--surface-hover-transform);
 }
 
