@@ -117,7 +117,7 @@
       link: https://arxiv.org/pdf/2509.23139
       icon: fa-solid fa-file-pdf
     - text: Code
-      link: "#"
+      link: https://github.com/Sippengg/OptiINR
       icon: fa-brands fa-github
   bibtex: |-
     @inproceedings{chen2026closing,
