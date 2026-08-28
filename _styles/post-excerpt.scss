@@ -73,6 +73,33 @@ $wrap: 800px;
   width: 100%;
 }
 
+.seminar-list .post-excerpt-text {
+  flex: 1;
+  align-content: center;
+}
+
+.seminar-list .post-info {
+  display: grid;
+  grid-template-columns: 200px 190px max-content;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  column-gap: 24px;
+  row-gap: 12px;
+}
+
+.seminar-list .post-info .portrait {
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.seminar-list .post-info > span {
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
+}
+
 @container (max-width: #{$wrap}) {
   .post-excerpt {
     flex-direction: column;
@@ -81,5 +108,25 @@ $wrap: 800px;
   .post-excerpt-image {
     width: unset;
     height: $thumb-size;
+  }
+}
+
+@container (max-width: 900px) {
+  .seminar-list .post-info {
+    grid-template-columns: 200px minmax(0, 1fr);
+  }
+
+  .seminar-list .post-info > span:nth-of-type(2) {
+    grid-column: 2;
+  }
+}
+
+@container (max-width: 520px) {
+  .seminar-list .post-info {
+    grid-template-columns: 1fr;
+  }
+
+  .seminar-list .post-info > span:nth-of-type(2) {
+    grid-column: 1;
   }
 }
