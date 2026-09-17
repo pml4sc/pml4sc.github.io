@@ -9,6 +9,7 @@
   date: 2026-07-27
   year: 2026
   description: "Conformal Cascade uses conformal prediction set size as the deferral rule for multi-tier LLM inference, delivering a distribution-free, finite-sample accuracy guarantee with no model training and black-box API access only."
+  banner: images/pub_banners/Conformal-Cascade.png
   buttons:
     - text: arXiv
       link: https://arxiv.org/abs/2607.25018
@@ -37,6 +38,7 @@
   date: 2026-07-25
   year: 2026
   description: "ConsistencyGate is a write-time admission gate that scores a candidate fact for self-consistency before committing it to an LLM agent's memory, curbing the contamination that otherwise compounds across long trajectories."
+  banner: images/pub_banners/ConsistencyGate.png
   buttons:
     - text: arXiv
       link: https://arxiv.org/abs/2607.22962
@@ -66,6 +68,7 @@
   date: 2026-07-25
   year: 2026
   description: "VPP treats verbalized machine learning as Bayesian inference, maintaining a population of natural-language hypotheses as particles updated by Metropolis-Hastings or sequential Monte Carlo and predicting by Bayesian model averaging."
+  banner: images/pub_banners/VPP.png
   buttons:
     - text: arXiv
       link: https://arxiv.org/abs/2607.22961
@@ -127,6 +130,7 @@
   date: 2026-05-15
   year: 2026
   description: "MFFM calibrates the conditional flow-matching source distribution to the empirical low-to-high-fidelity residual scale, yielding a learned analog of multigrid refinement that reaches the finest grid in one network evaluation per cascade level."
+  banner: images/pub_banners/MFFM.png
   buttons:
     - text: arXiv
       link: https://arxiv.org/abs/2605.16118
