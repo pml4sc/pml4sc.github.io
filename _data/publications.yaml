@@ -1,3 +1,150 @@
+- title: "Conformal Cascade: Distribution-Free Accuracy Guarantees for Multi-Tier LLM Inference"
+  authors:
+    - Yifan Dou
+    - Shikan Lian
+    - Shibo Li
+  venue: arXiv preprint
+  short_venue: arXiv 2026
+  type: preprint
+  date: 2026-07-27
+  year: 2026
+  description: "Conformal Cascade uses conformal prediction set size as the deferral rule for multi-tier LLM inference, delivering a distribution-free, finite-sample accuracy guarantee with no model training and black-box API access only."
+  buttons:
+    - text: arXiv
+      link: https://arxiv.org/abs/2607.25018
+      icon: fa-solid fa-file-lines
+    - text: PDF
+      link: https://arxiv.org/pdf/2607.25018
+      icon: fa-solid fa-file-pdf
+    - text: Code
+      link: "#"
+      icon: fa-brands fa-github
+  bibtex: |-
+    @article{dou2026conformal,
+      title={Conformal Cascade: Distribution-Free Accuracy Guarantees for Multi-Tier {LLM} Inference},
+      author={Dou, Yifan and Lian, Shikan and Li, Shibo},
+      journal={arXiv preprint arXiv:2607.25018},
+      year={2026}
+    }
+
+- title: "ConsistencyGate: Preventing Memory Contamination in LLM Agents via Self-Consistency Admission Control"
+  authors:
+    - Yan Zhang
+    - Shibo Li
+  venue: arXiv preprint
+  short_venue: arXiv 2026
+  type: preprint
+  date: 2026-07-25
+  year: 2026
+  description: "ConsistencyGate is a write-time admission gate that scores a candidate fact for self-consistency before committing it to an LLM agent's memory, curbing the contamination that otherwise compounds across long trajectories."
+  buttons:
+    - text: arXiv
+      link: https://arxiv.org/abs/2607.22962
+      icon: fa-solid fa-file-lines
+    - text: PDF
+      link: https://arxiv.org/pdf/2607.22962
+      icon: fa-solid fa-file-pdf
+    - text: Code
+      link: "#"
+      icon: fa-brands fa-github
+  bibtex: |-
+    @article{zhang2026consistencygate,
+      title={{ConsistencyGate}: Preventing Memory Contamination in {LLM} Agents via Self-Consistency Admission Control},
+      author={Zhang, Yan and Li, Shibo},
+      journal={arXiv preprint arXiv:2607.22962},
+      year={2026}
+    }
+
+- title: "Verbalized Particle Posterior: Bayesian Inference over Natural Language Hypotheses"
+  authors:
+    - Yan Zhang
+    - Shikan Lian
+    - Shibo Li
+  venue: arXiv preprint
+  short_venue: arXiv 2026
+  type: preprint
+  date: 2026-07-25
+  year: 2026
+  description: "VPP treats verbalized machine learning as Bayesian inference, maintaining a population of natural-language hypotheses as particles updated by Metropolis-Hastings or sequential Monte Carlo and predicting by Bayesian model averaging."
+  buttons:
+    - text: arXiv
+      link: https://arxiv.org/abs/2607.22961
+      icon: fa-solid fa-file-lines
+    - text: PDF
+      link: https://arxiv.org/pdf/2607.22961
+      icon: fa-solid fa-file-pdf
+    - text: Code
+      link: "#"
+      icon: fa-brands fa-github
+  bibtex: |-
+    @article{zhang2026verbalized,
+      title={Verbalized Particle Posterior: {Bayesian} Inference over Natural Language Hypotheses},
+      author={Zhang, Yan and Lian, Shikan and Li, Shibo},
+      journal={arXiv preprint arXiv:2607.22961},
+      year={2026}
+    }
+
+- title: "Closing the Capacity-Convergence Gap: Globally Optimal Configuration of Implicit Neural Representations"
+  authors:
+    - Sipeng Chen
+    - Yan Zhang
+    - Shibo Li
+  venue: European Conference on Computer Vision
+  short_venue: ECCV 2026
+  status: Accepted
+  type: conference
+  date: 2026-06-20
+  year: 2026
+  description: "OptiINR closes the capacity-convergence gap in implicit neural representations by formulating activation and initialization configuration as a principled global optimization problem."
+  banner: images/pub_banners/OptiINR.png
+  buttons:
+    - text: arXiv
+      link: https://arxiv.org/abs/2509.23139
+      icon: fa-solid fa-file-lines
+    - text: PDF
+      link: https://arxiv.org/pdf/2509.23139
+      icon: fa-solid fa-file-pdf
+    - text: Code
+      link: https://github.com/Sippengg/OptiINR
+      icon: fa-brands fa-github
+  bibtex: |-
+    @inproceedings{chen2026closing,
+      title={Closing the Capacity-Convergence Gap: Globally Optimal Configuration of Implicit Neural Representations},
+      author={Chen, Sipeng and Zhang, Yan and Li, Shibo},
+      booktitle={European Conference on Computer Vision},
+      year={2026}
+    }
+
+- title: "Multi-Fidelity Flow Matching: Cascaded Refinement of PDE Solutions"
+  authors:
+    - Sipeng Chen
+    - Junliang Liu
+    - Hewei Tang
+    - Shibo Li
+  venue: arXiv preprint
+  short_venue: arXiv 2026
+  type: preprint
+  date: 2026-05-15
+  year: 2026
+  description: "MFFM calibrates the conditional flow-matching source distribution to the empirical low-to-high-fidelity residual scale, yielding a learned analog of multigrid refinement that reaches the finest grid in one network evaluation per cascade level."
+  buttons:
+    - text: arXiv
+      link: https://arxiv.org/abs/2605.16118
+      icon: fa-solid fa-file-lines
+    - text: PDF
+      link: https://arxiv.org/pdf/2605.16118
+      icon: fa-solid fa-file-pdf
+    - text: Code
+      link: "#"
+      icon: fa-brands fa-github
+  bibtex: |-
+    @article{chen2026multi,
+      title={Multi-Fidelity Flow Matching: Cascaded Refinement of {PDE} Solutions},
+      author={Chen, Sipeng and Liu, Junliang and Tang, Hewei and Li, Shibo},
+      journal={arXiv preprint arXiv:2605.16118},
+      year={2026}
+    }
+
 - title: "Regime-Adaptive Bayesian Optimization via Dirichlet Process Mixtures of Gaussian Processes"
   authors:
     - Yan Zhang
@@ -94,35 +241,4 @@
       author={Qu, Junqi and Zhang, Yan and Gao, Shangqian and Li, Shibo},
       journal={arXiv preprint arXiv:2601.00088},
       year={2025}
-    }
-
-- title: "Closing the Capacity-Convergence Gap: Globally Optimal Configuration of Implicit Neural Representations"
-  authors:
-    - Sipeng Chen
-    - Yan Zhang
-    - Shibo Li
-  venue: European Conference on Computer Vision
-  short_venue: ECCV 2026
-  status: Accepted
-  type: conference
-  date: 2026-06-20
-  year: 2026
-  description: "OptiINR closes the capacity-convergence gap in implicit neural representations by formulating activation and initialization configuration as a principled global optimization problem."
-  banner: images/pub_banners/OptiINR.png
-  buttons:
-    - text: arXiv
-      link: https://arxiv.org/abs/2509.23139
-      icon: fa-solid fa-file-lines
-    - text: PDF
-      link: https://arxiv.org/pdf/2509.23139
-      icon: fa-solid fa-file-pdf
-    - text: Code
-      link: https://github.com/Sippengg/OptiINR
-      icon: fa-brands fa-github
-  bibtex: |-
-    @inproceedings{chen2026closing,
-      title={Closing the Capacity-Convergence Gap: Globally Optimal Configuration of Implicit Neural Representations},
-      author={Chen, Sipeng and Zhang, Yan and Li, Shibo},
-      booktitle={European Conference on Computer Vision},
-      year={2026}
     }
