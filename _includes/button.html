@@ -6,6 +6,10 @@
     <a
       class="button"
       href="{{ button.link | replace: "$LINK", button.link | relative_url }}"
+      {% if button.link contains "://" or button.link contains ".pdf" %}
+        target="_blank"
+        rel="noopener noreferrer"
+      {% endif %}
       {% if button.tooltip %}
         data-tooltip="{{ button.tooltip | xml_escape }}"
       {% endif %}

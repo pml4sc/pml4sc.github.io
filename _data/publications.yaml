@@ -173,7 +173,7 @@
       link: https://arxiv.org/abs/2601.20043
       icon: fa-solid fa-file-lines
     - text: PDF
-      link: https://raw.githubusercontent.com/mlresearch/v306/main/assets/zhang26dn/zhang26dn.pdf
+      link: assets/publications/zhang2026rambo.pdf
       icon: fa-solid fa-file-pdf
     - text: OpenReview
       link: https://openreview.net/forum?id=bSUMVAYoMq
