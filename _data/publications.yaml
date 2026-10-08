@@ -166,21 +166,31 @@
   description: "A regime-adaptive Bayesian optimization framework that models heterogeneous response patterns with Dirichlet process mixtures of Gaussian processes."
   banner: images/pub_banners/RAMBO.png
   buttons:
+    - text: PMLR
+      link: https://proceedings.mlr.press/v306/zhang26dn.html
+      icon: fa-solid fa-book-open
     - text: arXiv
       link: https://arxiv.org/abs/2601.20043
       icon: fa-solid fa-file-lines
     - text: PDF
-      link: https://arxiv.org/pdf/2601.20043
+      link: https://raw.githubusercontent.com/mlresearch/v306/main/assets/zhang26dn/zhang26dn.pdf
       icon: fa-solid fa-file-pdf
+    - text: OpenReview
+      link: https://openreview.net/forum?id=bSUMVAYoMq
+      icon: fa-solid fa-comments
     - text: Code
       link: https://github.com/AnthonyZhangYan/RAMBO
       icon: fa-brands fa-github
   bibtex: |-
-    @article{zhang2026rambo,
-      title={Regime-Adaptive {Bayesian} Optimization via {Dirichlet} Process Mixtures of {Gaussian} Processes},
-      author={Zhang, Yan and Liu, Xuefeng and Chen, Sipeng and Ranftl, Sascha and Liu, Chong and Li, Shibo},
-      journal={arXiv preprint arXiv:2601.20043},
-      year={2026}
+    @inproceedings{zhang2026rambo,
+      title = {Regime-Adaptive {B}ayesian Optimization via {D}irichlet Process Mixtures of {G}aussian Processes},
+      author = {Zhang, Yan and Liu, Xuefeng and Chen, Sipeng and Ranftl, Sascha and Liu, Chong and Li, Shibo},
+      booktitle = {Proceedings of the 43rd International Conference on Machine Learning},
+      pages = {157148--157179},
+      year = {2026},
+      volume = {306},
+      series = {Proceedings of Machine Learning Research},
+      publisher = {PMLR}
     }
 
 - title: "COMPOL: A Unified Neural Operator Framework for Scalable Multi-Physics Simulations"
