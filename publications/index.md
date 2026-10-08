@@ -28,10 +28,27 @@ nav:
 
 {% include section.html %}
 
-{% assign years = publications | group_by: "year" %}
+{% assign published = publications | where: "status", "Accepted" %}
+{% assign preprints = publications | where_exp: "paper", "paper.status != 'Accepted'" %}
+
+{% for group in (1..2) %}
+{% if group == 1 %}
+  {% assign group_papers = published %}
+  {% assign group_title = "Published" %}
+  {% assign group_id = "published" %}
+{% else %}
+  {% assign group_papers = preprints %}
+  {% assign group_title = "Preprints" %}
+  {% assign group_id = "preprints" %}
+{% endif %}
+{% if group_papers.size > 0 %}
+
+<h2 id="{{ group_id }}">{{ group_title }}</h2>
+
+{% assign years = group_papers | group_by: "year" %}
 
 {% for year in years %}
-  <h3 class="section-year-heading publication-year" id="{{ year.name }}">{{ year.name }}</h3>
+  <h3 class="section-year-heading publication-year" id="{{ group_id }}-{{ year.name }}">{{ year.name }}</h3>
   <div class="publications-grid">
     {% for paper in year.items %}
       {%
@@ -51,4 +68,7 @@ nav:
       %}
     {% endfor %}
   </div>
+{% endfor %}
+
+{% endif %}
 {% endfor %}

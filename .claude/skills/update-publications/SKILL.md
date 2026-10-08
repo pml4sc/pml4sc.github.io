@@ -6,7 +6,8 @@ description: Add or update papers on the lab publications page (_data/publicatio
 # Update publications
 
 The publications page is driven entirely by `_data/publications.yaml`. `publications/index.md`
-sorts it by `date` descending, groups by `year`, and renders each entry through
+sorts it by `date` descending, splits it into a **Published** section (`status: Accepted`) and a
+**Preprints** section (no `status`), groups each by `year`, and renders each entry through
 `_includes/publication.html`. Never hand-edit `publications/index.md` to add a paper — the only
 file that changes is the data file (plus a banner image, if one is supplied).
 
